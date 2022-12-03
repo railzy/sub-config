@@ -4,7 +4,7 @@ version = 1
   overwrite_original_rules = false
 
   # Options for custom base configuration file
-  clash_rule_base = "base/clash_me.yml"
+  clash_rule_base = "https://raw.githubusercontent.com/railzy/sub-config/main/base/clash_me.yml"
   #surge_rule_base = "base/surge.conf"
   #surfboard_rule_base = "base/surfboard.conf"
   #mellow_rule_base = "base/mellow.conf"
@@ -117,25 +117,25 @@ version = 1
 # 个人规则，优先级从前往后
 [[rulesets]]
   group   = "DIRECT"
-  ruleset = "rules/mine/MyAlwaysDirect.list"
+  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/MyAlwaysDirect.list"
 [[rulesets]]
   group   = "🎯 全球直连"
-  ruleset = "rules/mine/mycn.list"
+  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/mycn.list"
 [[rulesets]]
   group   = "🔰 节点选择"
-  ruleset = "rules/mine/myglobal.list"
+  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/myglobal.list"
 [[rulesets]]
   group   = "⛔️ 广告拦截"
-  ruleset = "rules/mine/MyADList.list"
+  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/MyADList.list"
 [[rulesets]]
   group   = "🛑 全球拦截"
-  ruleset = "rules/mine/MyReject.list"
+  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/MyReject.list"
 [[rulesets]]
   group   = "hktw"
-  ruleset = "rules/mine/myhktw.list"
+  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/myhktw.list"
 [[rulesets]]
   group   = "tw"
-  ruleset = "rules/mine/mytw.list"
+  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/mytw.list"
 [[rulesets]]
   group   = "EpicGames"
   ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Epic.list"
