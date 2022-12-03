@@ -1,0 +1,13 @@
+# 禁漫天堂
+DOMAIN-KEYWORD,18comic
+
+# 拷贝漫画
+DOMAIN-SUFFIX,copymanga.com
+DOMAIN-SUFFIX,copymanga.org
+# 拷贝漫画图源
+DOMAIN-SUFFIX,mangafunc.fun
+DOMAIN-SUFFIX,mangafuna.xyz
+DOMAIN-KEYWORD,mangafun
+
+# 冒险岛m(手游)国际服
+PROCESS-NAME,com.nexon.maplem.global

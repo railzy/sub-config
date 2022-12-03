@@ -1,0 +1,25 @@
+# torrent
+DOMAIN-KEYWORD,torrent
+
+# nga
+DOMAIN-SUFFIX,nga.cn
+DOMAIN-SUFFIX,178.com
+DOMAIN-SUFFIX,ngabbs.com
+DOMAIN-SUFFIX,ngacn.cc
+DOMAIN-SUFFIX,nga.donews.com
+
+
+
+# dmzj
+DOMAIN-SUFFIX,dmzj.com
+
+# 麦当劳登录
+DOMAIN-SUFFIX,mcd.portal.cloudwinner.cn
+
+# CatNet 订阅
+DOMAIN,configuration.osk2.com
+
+# uu加速器
+PROCESS-NAME,uu.exe
+PROCESS-NAME,uu_render.exe
+PROCESS-NAME,uu_ball.exe

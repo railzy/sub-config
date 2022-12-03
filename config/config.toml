@@ -1,0 +1,261 @@
+version = 1
+[custom]
+  enable_rule_generator    = true
+  overwrite_original_rules = false
+
+  # Options for custom base configuration file
+  clash_rule_base = "base/clash_me.yml"
+  #surge_rule_base = "base/surge.conf"
+  #surfboard_rule_base = "base/surfboard.conf"
+  #mellow_rule_base = "base/mellow.conf"
+  #quan_rule_base = "base/quan.conf"
+  #quanx_rule_base = "base/quanx.conf"
+
+  # Options for adding emojis
+  #add_emoji = true
+  #remove_old_emoji = true
+
+  # Options for filtering nodes
+  #include_remarks = []
+  #exclude_remarks = []
+
+  # [[custom_groups]]
+  # import = "snippets/groups_forcerule.toml"
+
+[[custom_groups]]
+  name = "🔰 节点选择"
+  type = "select"
+  rule = ["[]Auto", "[]DIRECT", "(港|hk)", "(日|jp)", "(台|tw)", ".*"]
+
+[[custom_groups]]
+  name = "🎥 YouTube"
+  type = "select"
+  rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
+
+[[custom_groups]]
+  name = "🎥 NETFLIX"
+  type = "select"
+  rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
+
+[[custom_groups]]
+  name = "🌍 国外媒体"
+  type = "select"
+  rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
+
+[[custom_groups]]
+  name = "⛔️ 广告拦截"
+  type = "select"
+  rule = ["[]🛑 全球拦截", "[]🎯 全球直连", "[]REJECT", "[]DIRECT", "[]🔰 节点选择"]
+
+[[custom_groups]]
+  name = "🛑 全球拦截"
+  type = "select"
+  rule = ["[]REJECT", "[]DIRECT", "[]🔰 节点选择"]
+
+[[custom_groups]]
+  name = "🎯 全球直连"
+  type = "select"
+  rule = ["[]DIRECT", "[]🔰 节点选择", ".*"]
+
+[[custom_groups]]
+  name = "EpicGames"
+  type = "select"
+  rule = ["[]DIRECT", "[]🔰 节点选择", ".*"]
+
+[[custom_groups]]
+  name = "Ⓜ️ 微软服务"
+  type = "select"
+  rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
+
+[[custom_groups]]
+  name = "Xbox"
+  type = "select"
+  rule = ["[]Ⓜ️ 微软服务", "[]🔰 节点选择", "[]DIRECT", ".*"]
+
+[[custom_groups]]
+  name = "tw"
+  type = "select"
+  rule = ["(台|tw)", "(港|hk)", "[]🔰 节点选择", ".*"]
+
+[[custom_groups]]
+  name = "hktw"
+  type = "select"
+  rule = ["(港|hk)", "(台|tw)", "[]🔰 节点选择", ".*"]
+
+[[custom_groups]]
+  name = "🐟 漏网之鱼"
+  type = "select"
+  rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
+
+[[custom_groups]]
+  name = "📲 电报信息"
+  type = "select"
+  rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
+
+[[custom_groups]]
+  name = "🌏 国内媒体"
+  type = "select"
+  rule = [
+    "[]🎯 全球直连",
+    "[]DIRECT",
+    "(HGC|HKBN|PCCW|HKT|深台|彰化|新北|台|hk|港|tw)",
+    "[]🔰 节点选择",
+  ]
+
+[[custom_groups]]
+  name = "🍎 苹果服务"
+  type = "select"
+  rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
+
+[[custom_groups]]
+  name     = "Auto"
+  type     = "fallback"
+  rule     = ["(港|hk)", "(台|tw)", "(日|jp)", ".*", "[]DIRECT"]
+  url      = "http://www.gstatic.com/generate_204"
+  interval = 300
+
+# 个人规则，优先级从前往后
+[[rulesets]]
+  group   = "DIRECT"
+  ruleset = "rules/mine/MyAlwaysDirect.list"
+[[rulesets]]
+  group   = "🎯 全球直连"
+  ruleset = "rules/mine/mycn.list"
+[[rulesets]]
+  group   = "🔰 节点选择"
+  ruleset = "rules/mine/myglobal.list"
+[[rulesets]]
+  group   = "⛔️ 广告拦截"
+  ruleset = "rules/mine/MyADList.list"
+[[rulesets]]
+  group   = "🛑 全球拦截"
+  ruleset = "rules/mine/MyReject.list"
+[[rulesets]]
+  group   = "hktw"
+  ruleset = "rules/mine/myhktw.list"
+[[rulesets]]
+  group   = "tw"
+  ruleset = "rules/mine/mytw.list"
+[[rulesets]]
+  group   = "EpicGames"
+  ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Epic.list"
+[[rulesets]]
+  group   = "Xbox"
+  ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Xbox.list"
+[[rulesets]]
+  group   = "🎥 YouTube"
+  ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/DivineEngine/Surge/Ruleset/StreamingMedia/Music/YouTube-Music.list"
+[[rulesets]]
+  group   = "🎥 YouTube"
+  ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/YouTube.list"
+
+# 有误判，弃用
+# [[rulesets]]
+#   group   = "DIRECT"
+#   type    = "clash-ipcidr"
+#   ruleset = "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
+
+[[rulesets]]
+  group   = "DIRECT"
+  ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list"
+
+# 广告规则要放前面否则没用
+[[rulesets]]
+  group   = "⛔️ 广告拦截"
+  ruleset = "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adblock4limbo.list"
+[[rulesets]]
+  group   = "⛔️ 广告拦截"
+  ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanEasyList.list"
+[[rulesets]]
+  group   = "⛔️ 广告拦截"
+  ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanEasyListChina.list"
+[[rulesets]]
+  group   = "🛑 全球拦截"
+  ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/DivineEngine/Surge/Ruleset/Guard/Hijacking.list"
+
+# subconverter 默认规则，不需要改动，会被上面的覆盖
+[[rulesets]]
+  group   = "Ⓜ️ 微软服务"
+  ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/MSServices.list"
+
+# 很多已经不再能直连，弃用
+# [[rulesets]]
+#   group   = "🎯 全球直连"
+#   ruleset = "rules/DivineEngine/Surge/Ruleset/Unbreak.list"
+# 调整拦截优先级
+# [[rulesets]]
+#   group   = "🛑 全球拦截"
+#   ruleset = "rules/NobyDa/Surge/AdRule.list"
+# [[rulesets]]
+#   group   = "🛑 全球拦截"
+#   ruleset = "rules/DivineEngine/Surge/Ruleset/Guard/Hijacking.list"
+[[rulesets]]
+  group   = "🎥 NETFLIX"
+  ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/DivineEngine/Surge/Ruleset/StreamingMedia/Video/Netflix.list"
+[[rulesets]]
+  group   = "🌍 国外媒体"
+  ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/DivineEngine/Surge/Ruleset/StreamingMedia/Streaming.list"
+
+# [[rulesets]]
+#   group   = "🌏 国内媒体"
+#   ruleset = "rules/lhie1/Surge/Surge 3/Provider/Media/Bilibili.list"
+# [[rulesets]]
+#   group   = "🌏 国内媒体"
+#   ruleset = "rules/lhie1/Surge/Surge 3/Provider/Media/iQiyi.list"
+# [[rulesets]]
+#   group   = "🌏 国内媒体"
+#   ruleset = "rules/lhie1/Surge/Surge 3/Provider/Media/Letv.list"
+# [[rulesets]]
+#   group   = "🌏 国内媒体"
+#   ruleset = "rules/lhie1/Surge/Surge 3/Provider/Media/MOO.list"
+# [[rulesets]]
+#   group   = "🌏 国内媒体"
+#   ruleset = "rules/lhie1/Surge/Surge 3/Provider/Media/Tencent Video.list"
+# [[rulesets]]
+#   group   = "🌏 国内媒体"
+#   ruleset = "rules/lhie1/Surge/Surge 3/Provider/Media/Youku.list"
+# 直接整合上述的几条
+[[rulesets]]
+  group   = "🌏 国内媒体"
+  ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaMedia.list"
+
+[[rulesets]]
+  group   = "📲 电报信息"
+  ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/DivineEngine/Surge/Ruleset/Extra/Telegram/Telegram.list"
+#[[rulesets]] # geoip 够了
+#  group   = "🔰 节点选择"
+#  ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/DivineEngine/Surge/Ruleset/Global.list"
+[[rulesets]]
+  group   = "🍎 苹果服务"
+  ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/DivineEngine/Surge/Ruleset/Extra/Apple/Apple.list"
+[[rulesets]]
+  group   = "🎯 全球直连"
+  ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/DivineEngine/Surge/Ruleset/China.list"
+[[rulesets]]
+  group   = "🎯 全球直连"
+  ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/NobyDa/Surge/Download.list"
+
+# 国内能直连的网站，导致nikke下不动
+#[[rulesets]]
+#  group   = "🎯 全球直连"
+#  type    = "clash-domain"
+#  ruleset = "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
+
+
+#[[rulesets]]
+#  group   = "🐟 漏网之鱼"
+#  ruleset = "[]GEOSITE,geolocation-!cn"
+
+[[rulesets]]
+  group   = "🎯 全球直连"
+  ruleset = "[]GEOIP,CN"
+[[rulesets]]
+  group   = "🐟 漏网之鱼"
+  ruleset = "[]FINAL"
+
+  # [[template_args]]
+  # key = "clash.dns.port"
+  # value = "5353"
+
+[[emoji]]
+  import = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/snippets/emoji.toml"

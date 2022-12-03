@@ -1,0 +1,19 @@
+# steam
+DOMAIN-SUFFIX,steampowered.com
+DOMAIN-SUFFIX,steamcommunity.com
+DOMAIN-SUFFIX,akamai.steamstatic.com
+DOMAIN-SUFFIX,cloudflare.steamstatic.com
+
+# akamai cdn
+DOMAIN-SUFFIX,akamaihd.net
+
+# GMS
+DOMAIN-SUFFIX,googleapis.cn
+DOMAIN-SUFFIX,googletraveladservices.com
+DOMAIN,mtalk.google.com
+
+# google download
+DOMAIN,dl.google.com
+
+# dlsite
+DOMAIN-SUFFIX,dlsite.com
