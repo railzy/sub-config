@@ -21,3 +21,7 @@ DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-SUFFIX,cm.steampowered.com
 DOMAIN-SUFFIX,steamserver.net
+
+# PC Xbox 游戏服务
+PROCESS-NAME,gamingservices.exe
+PROCESS-NAME,gamingservicesnet.exe
