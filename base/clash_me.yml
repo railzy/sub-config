@@ -77,7 +77,7 @@ dns:
     # - https://dns.google/dns-query
     # - https://doh.pub/dns-query
     # - https://1.1.1.1/dns-query # DNS over HTTPS
-    - https://rubyfish.cn/dns-query
+    # - https://rubyfish.cn/dns-query
     # - https://i.233py.com/dns-query
 
 
