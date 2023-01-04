@@ -1,5 +1,6 @@
 # torrent
-DOMAIN-KEYWORD,torrent
+# 误杀qbt官网
+# DOMAIN-KEYWORD,torrent
 
 # nga
 DOMAIN-SUFFIX,nga.cn
