@@ -25,3 +25,7 @@ DOMAIN-SUFFIX,steamserver.net
 # PC Xbox 游戏服务
 PROCESS-NAME,gamingservices.exe
 PROCESS-NAME,gamingservicesnet.exe
+
+# Wechat
+DOMAIN-SUFFIX,qlogo.cn
+DOMAIN-SUFFIX,qpic.cn
