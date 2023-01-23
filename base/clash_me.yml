@@ -88,13 +88,13 @@ dns:
   # The answers from fallback servers are used when the GEOIP country
   # is not `CN`.
   fallback:
-    # - https://dns.google/dns-query
+    - https://dns.google/dns-query
     - https://cloudflare-dns.com/dns-query
     # - "[2001:4860:4860::8888]:53" # Google ipv6 dns
     # - tls://1.1.1.1:853
     # - https://1.1.1.1/dns-query # DNS over HTTPS
     # - https://8.8.8.8/dns-query
-    - tls://8.8.4.4
+    #- tls://8.8.4.4
     # - 1.1.1.1
     # - https://dns.rubyfish.cn/dns-query
     # - 8.8.4.4
