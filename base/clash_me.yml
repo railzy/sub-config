@@ -5,7 +5,8 @@ mode: Rule
 # external-controller: '127.0.0.1:9090'
 ipv6: true
 
-geodata-mode: true         #【Meta专属】使用geoip.dat数据库(默认：false使用mmdb数据库)
+#【Meta专属】使用geoip.dat数据库(默认：false使用mmdb数据库)
+geodata-mode: true         
 
 # 实验性功能
 # experimental:
