@@ -149,29 +149,29 @@ version = 1
   ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Xbox.list"
 [[rulesets]]
   group   = "🎥 YouTube"
-  ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/DivineEngine/Surge/Ruleset/StreamingMedia/Music/YouTube-Music.list"
+  ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTubeMusic.list"
 [[rulesets]]
   group   = "🎥 YouTube"
   ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/YouTube.list"
 
 [[ruleset]]
-group="Spotify"
-type="clash-classic" 
-ruleset="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml"
+  group   = "Spotify"
+  type    = "clash-classic"
+  ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml"
 
-# 有误判，弃用
-# [[rulesets]]
-#   group   = "DIRECT"
-#   type    = "clash-ipcidr"
-#   ruleset = "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
+  # 有误判，弃用
+  # [[rulesets]]
+  #   group   = "DIRECT"
+  #   type    = "clash-ipcidr"
+  #   ruleset = "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
 
 #[[rulesets]]
 #  group   = "DIRECT"
 #  ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list"
 [[rulesets]]
   group   = "DIRECT"
-  type="clash-classic" 
-  ruleset ="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml"
+  type    = "clash-classic"
+  ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml"
 
 # 广告规则要放前面否则没用
 [[rulesets]]
@@ -190,7 +190,7 @@ ruleset="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/r
 # subconverter 默认规则，不需要改动，会被上面的覆盖
 [[rulesets]]
   group   = "Ⓜ️ 微软服务"
-  ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/MSServices.list"
+  ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list"
 
 # 很多已经不再能直连，弃用
 # [[rulesets]]
@@ -249,16 +249,16 @@ ruleset="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/r
   group   = "🎯 全球直连"
   ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/NobyDa/Surge/Download.list"
 
-# 国内能直连的网站，导致nikke下不动
-#[[rulesets]]
-#  group   = "🎯 全球直连"
-#  type    = "clash-domain"
-#  ruleset = "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
+  # 国内能直连的网站，导致nikke下不动
+  #[[rulesets]]
+  #  group   = "🎯 全球直连"
+  #  type    = "clash-domain"
+  #  ruleset = "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
 
 
-#[[rulesets]]
-#  group   = "🐟 漏网之鱼"
-#  ruleset = "[]GEOSITE,geolocation-!cn"
+  #[[rulesets]]
+  #  group   = "🐟 漏网之鱼"
+  #  ruleset = "[]GEOSITE,geolocation-!cn"
 
 [[rulesets]]
   group   = "🎯 全球直连"
