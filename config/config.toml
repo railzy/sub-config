@@ -165,9 +165,9 @@ ruleset="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/r
 #   type    = "clash-ipcidr"
 #   ruleset = "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
 
-[[rulesets]]
-  group   = "DIRECT"
-  ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list"
+#[[rulesets]]
+#  group   = "DIRECT"
+#  ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list"
 [[rulesets]]
   group   = "DIRECT"
   type="clash-classic" 
