@@ -87,15 +87,15 @@ dns:
   # is not `CN`.
   fallback:
     # - https://dns.google/dns-query
-    # - https://cloudflare-dns.com/dns-query
+    - https://cloudflare-dns.com/dns-query
     # - "[2001:4860:4860::8888]:53" # Google ipv6 dns
     # - tls://1.1.1.1:853
     # - https://1.1.1.1/dns-query # DNS over HTTPS
     # - https://8.8.8.8/dns-query
-    - tls://8.8.4.4:853
-    - 1.1.1.1
+    - tls://8.8.4.4
+    # - 1.1.1.1
     # - https://dns.rubyfish.cn/dns-query
-    - 8.8.4.4
+    # - 8.8.4.4
     # - tls://dns.rubyfish.cn:853 # DNS over TLS
   # DoH and DoT fallback server not work in scut. Don't use.
 
