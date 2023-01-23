@@ -5,6 +5,8 @@ mode: Rule
 # external-controller: '127.0.0.1:9090'
 ipv6: true
 
+geodata-mode: true         #【Meta专属】使用geoip.dat数据库(默认：false使用mmdb数据库)
+
 # 实验性功能
 # experimental:
 #   ignore-resolve-fail: true # 忽略 DNS 解析失败，默认值为 true
