@@ -250,9 +250,9 @@ version = 1
 [[rulesets]]
   group   = "🍎 苹果服务"
   ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/DivineEngine/Surge/Ruleset/Extra/Apple/Apple.list"
-[[rulesets]]
-  group   = "🎯 全球直连"
-  ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/DivineEngine/Surge/Ruleset/China.list"
+# [[rulesets]]
+#   group   = "🎯 全球直连"
+#   ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/DivineEngine/Surge/Ruleset/China.list"
 [[rulesets]]
   group   = "🎯 全球直连"
   ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/NobyDa/Surge/Download.list"
