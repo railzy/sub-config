@@ -93,6 +93,11 @@ version = 1
   rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
 
 [[custom_groups]]
+  name = "AzurLane"
+  type = "select"
+  rule = ["[]DIRECT", "[]🔰 节点选择", ".*"]
+
+[[custom_groups]]
   name = "📲 电报信息"
   type = "select"
   rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
@@ -129,6 +134,9 @@ version = 1
 [[rulesets]]
   group   = "🔰 节点选择"
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/myglobal.list"
+[[rulesets]]
+  group   = "AzurLane"
+  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/AzurLane.list"
 [[rulesets]]
   group   = "⛔️ 广告拦截"
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/MyADList.list"
