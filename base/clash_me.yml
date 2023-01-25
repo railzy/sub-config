@@ -83,8 +83,7 @@ dns:
     # - "[2400:3200::1]:53"
     - https://doh.pub/dns-query
     - https://223.5.5.5/dns-query
-    # 添加系统 DNS
-    - dhcp://system
+    # - dhcp://system # 添加系统 DNS，这种写法只在安卓有效
     # - 114.114.114.114 # default value
     # - https://dns.google/dns-query
     # - https://doh.pub/dns-query
