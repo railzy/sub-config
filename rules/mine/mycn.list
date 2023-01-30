@@ -14,7 +14,7 @@ DOMAIN-SUFFIX,xboxlive.cn
 DOMAIN-SUFFIX,msftconnecttest.com
 
 # 羽翼城的个人博客
-DOMAIN-SUFFIX,dogfight360.com
+# DOMAIN-SUFFIX,dogfight360.com
 
 # steam CN 下载
 # 来源 https://www.dogfight360.com/blog/knowledge-base/fix_steamdl_region/
