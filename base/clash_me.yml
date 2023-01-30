@@ -44,8 +44,9 @@ dns:
 
   #指定域名使用自定义DNS解析
   nameserver-policy:    
-    'blhxstatic.yo-star.com':   'https://223.5.5.5/dns-query'
-    '+.cn': 'https://223.5.5.5/dns-query'
+    'blhxstatic.yo-star.com':   'https://dns.alidns.com/dns-query'
+    '+.dogfight360.com': 'https://dns.alidns.com/dns-query'
+    '+.cn': 'https://dns.alidns.com/dns-query'
   # 'www.baidu.com': 'https://223.5.5.5/dns-query'
   # '+.internal.crop.com': '114.114.114.114'
   enhanced-mode: redir-host # redir-host (will be deprecated) or fake-ip 
@@ -79,10 +80,10 @@ dns:
   # involved. Clash answers the DNS question with the first result gathered.
   nameserver:
     # - tls://dns.rubyfish.cn:853 # DNS over TLS
-    # - https://dns.alidns.com/dns-query # DNS over HTTPS
+    - https://dns.alidns.com/dns-query # DNS over HTTPS
     # - "[2400:3200::1]:53"
     - https://doh.pub/dns-query
-    - https://223.5.5.5/dns-query
+    # - https://223.5.5.5/dns-query
     # - dhcp://system # 添加系统 DNS，这种写法只在安卓有效
     # - 114.114.114.114 # default value
     # - https://dns.google/dns-query
