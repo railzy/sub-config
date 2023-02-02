@@ -279,5 +279,9 @@ version = 1
   # key = "clash.dns.port"
   # value = "5353"
 
+[[rename_node]]
+match = "深港"
+replace = "ShenGang"
+
 [[emoji]]
   import = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/snippets/emoji.toml"
