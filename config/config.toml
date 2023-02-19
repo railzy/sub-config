@@ -184,6 +184,10 @@ version = 1
 # 广告规则要放前面否则没用
 [[rulesets]]
   group   = "⛔️ 广告拦截"
+  type    = "clash-domain"
+  ruleset = "https://anti-ad.net/clash.yaml"
+[[rulesets]]
+  group   = "⛔️ 广告拦截"
   ruleset = "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adblock4limbo.list"
 [[rulesets]]
   group   = "⛔️ 广告拦截"
