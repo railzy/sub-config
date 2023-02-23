@@ -11,7 +11,7 @@ DOMAIN-SUFFIX,ykmh.com
 DOMAIN-SUFFIX,xboxlive.cn
 
 # xbox 网络检测
-DOMAIN-SUFFIX,msftconnecttest.com
+# DOMAIN-SUFFIX,msftconnecttest.com
 
 # 羽翼城的个人博客
 DOMAIN-SUFFIX,dogfight360.com

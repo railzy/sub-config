@@ -47,7 +47,7 @@ dns:
   nameserver-policy:    
     'blhxstatic.yo-star.com':   'https://dns.alidns.com/dns-query'
     '+.dogfight360.com': 'https://dns.alidns.com/dns-query'
-    '+.cn': 'https://dns.alidns.com/dns-query'
+    # '+.cn': 'https://dns.alidns.com/dns-query'
     # steam 检测地区
     '+.cm.steampowered.com': 'https://dns.alidns.com/dns-query'
     '+.steamserver.net': 'https://dns.alidns.com/dns-query'
