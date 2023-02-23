@@ -25,7 +25,7 @@ version = 1
 [[custom_groups]]
   name = "🔰 节点选择"
   type = "select"
-  rule = ["[]Auto", "[]DIRECT", "(港|hk)", "(日|jp)", "(台|tw)", ".*"]
+  rule = ["[]Auto", "[]DIRECT", "(日|jp)", "(港|hk)", "(台|tw)", ".*"]
 
 [[custom_groups]]
   name = "🎥 YouTube"
@@ -120,7 +120,7 @@ version = 1
 [[custom_groups]]
   name     = "Auto"
   type     = "fallback"
-  rule     = ["(港|hk)", "(台|tw)", "(日|jp)", ".*", "[]DIRECT"]
+  rule     = ["(日|jp)", "(台|tw)", "(港|hk)", ".*", "[]DIRECT"]
   url      = "https://www.gstatic.com/generate_204"
   interval = 300
 
@@ -284,8 +284,8 @@ version = 1
   # value = "5353"
 
 [[rename_node]]
-match = "深港"
-replace = "ShenGang"
+  match   = "深港"
+  replace = "ShenGang"
 
 [[emoji]]
   import = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/snippets/emoji.toml"
