@@ -23,6 +23,9 @@ DOMAIN-SUFFIX,cm.steampowered.com
 # DOMAIN-SUFFIX,test.steampowered.com
 DOMAIN-SUFFIX,steamserver.net
 
+# GeForce Experience 驱动下载
+DOMAIN-SUFFIX,international-gfe.download.nvidia.com
+
 # PC Xbox 游戏服务
 # PROCESS-NAME,gamingservices.exe
 PROCESS-NAME,gamingservicesnet.exe
