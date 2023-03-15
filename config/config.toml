@@ -25,7 +25,14 @@ version = 1
 [[custom_groups]]
   name = "🔰 节点选择"
   type = "select"
-  rule = ["[]Auto", "[]DIRECT", "(日|jp)", "(港|hk)", "(台|tw)", ".*"]
+  rule = [
+    "[]Auto",
+    "[]DIRECT",
+    "(日|jp|Japan)",
+    "(港|hk|Hong Kong)",
+    "(台|tw|Taiwan)",
+    ".*",
+  ]
 
 [[custom_groups]]
   name = "🎥 YouTube"
@@ -80,12 +87,12 @@ version = 1
 [[custom_groups]]
   name = "tw"
   type = "select"
-  rule = ["(台|tw)", "(港|hk)", "[]🔰 节点选择", ".*"]
+  rule = ["[]AutoTW", "(台|tw|Taiwan)", "(港|hk|Hong Kong)", "[]🔰 节点选择", ".*"]
 
 [[custom_groups]]
   name = "hktw"
   type = "select"
-  rule = ["(港|hk)", "(台|tw)", "[]🔰 节点选择", ".*"]
+  rule = ["[]AutoHK", "(港|hk|Hong Kong)", "(台|tw|Taiwan)", "[]🔰 节点选择", ".*"]
 
 [[custom_groups]]
   name = "🐟 漏网之鱼"
@@ -120,7 +127,21 @@ version = 1
 [[custom_groups]]
   name     = "Auto"
   type     = "fallback"
-  rule     = ["(日|jp)", "(台|tw)", "(港|hk)", ".*", "[]DIRECT"]
+  rule     = ["(日|jp|Japan)", "(台|tw|Taiwan)", "(港|hk|Hong Kong)", ".*", "[]DIRECT"]
+  url      = "https://www.gstatic.com/generate_204"
+  interval = 300
+
+[[custom_groups]]
+  name     = "AutoHK"
+  type     = "fallback"
+  rule     = ["(港|hk|Hong Kong)", "(台|tw|Taiwan)", "(日|jp|Japan)", ".*", "[]DIRECT"]
+  url      = "https://www.gstatic.com/generate_204"
+  interval = 300
+
+[[custom_groups]]
+  name     = "AutoTW"
+  type     = "fallback"
+  rule     = ["(台|tw|Taiwan)", "(港|hk|Hong Kong)", "(日|jp|Japan)", ".*", "[]DIRECT"]
   url      = "https://www.gstatic.com/generate_204"
   interval = 300
 
