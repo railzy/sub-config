@@ -26,7 +26,7 @@ version = 1
   name = "🔰 节点选择"
   type = "select"
   rule = [
-    "[]Auto",
+    "[]AutoJP",
     "[]DIRECT",
     "(日|jp|Japan)",
     "(港|hk|Hong Kong)",
@@ -37,7 +37,17 @@ version = 1
 [[custom_groups]]
   name = "🎥 YouTube"
   type = "select"
-  rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
+  rule = [
+    "[]AutoUSA",
+    "[]AutoJP",
+    "[]🔰 节点选择",
+    "(美|USA|America)",
+    "(日|jp|Japan)",
+    "(台|tw|Taiwan)",
+    "(港|hk|Hong Kong)",
+    ".*",
+    "[]DIRECT",
+  ]
 
 [[custom_groups]]
   name = "Spotify"
@@ -125,12 +135,24 @@ version = 1
   rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
 
 [[custom_groups]]
-  name     = "Auto"
+  name     = "AutoJP"
   type     = "fallback"
   rule     = ["(日|jp|Japan)", "(台|tw|Taiwan)", "(港|hk|Hong Kong)", ".*", "[]DIRECT"]
   url      = "https://www.gstatic.com/generate_204"
   interval = 300
-
+[[custom_groups]]
+  name = "AutoUSA"
+  type = "fallback"
+  rule = [
+    "(美|USA|America)",
+    "(日|jp|Japan)",
+    "(台|tw|Taiwan)",
+    "(港|hk|Hong Kong)",
+    ".*",
+    "[]DIRECT",
+  ]
+  url = "https://www.gstatic.com/generate_204"
+  interval = 300
 [[custom_groups]]
   name     = "AutoHK"
   type     = "fallback"

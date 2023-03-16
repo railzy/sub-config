@@ -108,7 +108,7 @@ dns:
     # - https://dns.google/dns-query
     # - https://cloudflare-dns.com/dns-query
     # - "[2001:4860:4860::8888]:53" # Google ipv6 dns
-    - tls://1.1.1.1
+    - tls://1.0.0.1
     # - https://1.1.1.1/dns-query # DNS over HTTPS
     # - https://8.8.8.8/dns-query
     - tls://8.8.4.4
