@@ -9,6 +9,7 @@ DOMAIN-SUFFIX,ykmh.com
 
 # xbox 下载
 DOMAIN-SUFFIX,xboxlive.cn
+DOMAIN-SUFFIX,packagespc.xboxlive.com
 
 # xbox 网络检测
 # DOMAIN-SUFFIX,msftconnecttest.com
@@ -28,7 +29,7 @@ DOMAIN-SUFFIX,international-gfe.download.nvidia.com
 
 # PC Xbox 游戏服务
 # PROCESS-NAME,gamingservices.exe
-PROCESS-NAME,gamingservicesnet.exe
+# PROCESS-NAME,gamingservicesnet.exe
 
 # Wechat
 DOMAIN-SUFFIX,qlogo.cn
