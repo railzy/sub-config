@@ -118,7 +118,7 @@ version = 1
 [[custom_groups]]
   name = "Xbox"
   type = "select"
-  rule = ["[]Ⓜ️ 微软服务", "[]🔰 节点选择", "[]DIRECT", ".*"]
+  rule = ["[]Ⓜ️ 微软服务", "[]REJECT", "[]🔰 节点选择", "[]DIRECT", ".*"]
 
 [[custom_groups]]
   name = "tw"
