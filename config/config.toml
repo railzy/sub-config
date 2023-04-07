@@ -121,7 +121,7 @@ version = 1
   rule = ["[]Ⓜ️ 微软服务", "[]REJECT", "[]🔰 节点选择", "[]DIRECT", ".*"]
 
 [[custom_groups]]
-  name = "ehentai"
+  name = "eh"
   type = "select"
   rule = [
     "[]🔰 节点选择",
@@ -270,22 +270,22 @@ version = 1
   group   = "🎥 YouTube"
   ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/YouTube.list"
 
-[[ruleset]]
+[[rulesets]]
   group   = "Spotify"
   type    = "clash-classic"
   ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml"
-interval = 86400
 
-[[ruleset]]
+
+[[rulesets]]
   group   = "github"
   type    = "clash-classic"
   ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml"
 interval = 86400
 
-[[ruleset]]
+[[rulesets]]
   group   = "ehentai"
- # type    = "clash-classic"
-  ruleset="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/EHGallery.list"
+  type    = "clash-classic"
+  ruleset="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/EHGallery/EHGallery.yaml"
 
   # 有误判，弃用
   # [[rulesets]]
