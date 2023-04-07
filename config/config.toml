@@ -121,7 +121,7 @@ version = 1
   rule = ["[]Ⓜ️ 微软服务", "[]REJECT", "[]🔰 节点选择", "[]DIRECT", ".*"]
 
 [[custom_groups]]
-  name = "eh"
+  name = "ehentai"
   type = "select"
   rule = [
     "[]🔰 节点选择",
@@ -283,7 +283,7 @@ interval = 86400
 interval = 86400
 
 [[ruleset]]
-  group   = "eh"
+  group   = "ehentai"
  # type    = "clash-classic"
   ruleset="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/EHGallery.list"
 
