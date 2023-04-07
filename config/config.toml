@@ -121,6 +121,21 @@ version = 1
   rule = ["[]Ⓜ️ 微软服务", "[]REJECT", "[]🔰 节点选择", "[]DIRECT", ".*"]
 
 [[custom_groups]]
+  name = "eh"
+  type = "select"
+  rule = [
+    "[]AutoUSA",
+    "[]AutoJP",
+    "[]🔰 节点选择",
+    "(美|USA|America)",
+    "(日|jp|Japan)",
+    "(台|tw|Taiwan)",
+    "(港|hk|Hong Kong)",
+    ".*",
+    "[]DIRECT",
+  ]
+
+[[custom_groups]]
   name = "tw"
   type = "select"
   rule = ["[]AutoTW", "(台|tw|Taiwan)", "(港|hk|Hong Kong)", "[]🔰 节点选择", ".*"]
@@ -262,6 +277,11 @@ version = 1
   group   = "github"
   type    = "clash-classic"
   ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml"
+
+[[ruleset]]
+  group   = "eh"
+  type    = "clash-classic"
+  ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/EHGallery/EHGallery.yaml"
 
   # 有误判，弃用
   # [[rulesets]]
