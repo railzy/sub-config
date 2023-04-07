@@ -124,15 +124,17 @@ version = 1
   name = "eh"
   type = "select"
   rule = [
+    "[]🔰 节点选择",
     "[]AutoUSA",
     "[]AutoJP",
-    "[]🔰 节点选择",
+    "[]AutoHK",
+    "[]AutoTW",
+    "[]DIRECT",
     "(美|USA|America)",
     "(日|jp|Japan)",
-    "(台|tw|Taiwan)",
     "(港|hk|Hong Kong)",
+    "(台|tw|Taiwan)",
     ".*",
-    "[]DIRECT",
   ]
 
 [[custom_groups]]
