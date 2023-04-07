@@ -285,7 +285,7 @@ interval = 86400
 [[ruleset]]
   group   = "eh"
  # type    = "clash-classic"
-  ruleset = "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/EHGallery/EHGallery.list"
+  ruleset="https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/EHGallery.list"
 
   # 有误判，弃用
   # [[rulesets]]
