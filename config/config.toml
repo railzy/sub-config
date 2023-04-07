@@ -280,7 +280,7 @@ version = 1
   group   = "github"
   type    = "clash-classic"
   ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml"
-interval = 86400
+
 
 [[rulesets]]
   group   = "ehentai"
