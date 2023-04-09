@@ -15,7 +15,7 @@ geodata-mode: true
 
 #【Meta专属】sniffer域名嗅探器
 sniffer:
-  enable: false
+  enable: true
   ## 对 redir-host 类型识别的流量进行强制嗅探
   ## 如：Tun、Redir 和 TProxy 并 DNS 为 redir-host 皆属于
   # force-dns-mapping: false
@@ -136,15 +136,15 @@ dns:
 
     # - "[2001:4860:4860::8888]:53" # Google ipv6 dns
     # - tls://1.0.0.1
-    # - 1.0.0.1
-    - 'https://1.0.0.1/dns-query#节点选择' # DNS over HTTPS
-    - 'https://8.8.4.4/dns-query#节点选择'
+    - 1.0.0.1
+    # - 'https://1.0.0.1/dns-query' # DNS over HTTPS
+    # - 'https://8.8.4.4/dns-query'
     # - tls://8.8.4.4
     # - tls://dns.google
     # - tls://8.8.8.8
     # - 1.1.1.1
     # - https://dns.rubyfish.cn/dns-query
-    # - 8.8.4.4
+    - 8.8.4.4
     # - tls://dns.rubyfish.cn:853 # DNS over TLS
   # DoH and DoT fallback server not work in scut. Don't use.
 
