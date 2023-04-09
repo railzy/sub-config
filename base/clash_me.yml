@@ -14,11 +14,26 @@ geodata-mode: true
   # interface-name: en0 # outbound interface name
 
 #【Meta专属】sniffer域名嗅探器
-sniffer:                         
-  enable: true                   #嗅探开关
-  sniffing:                      #嗅探协议对象：目前支持tls/http
-    - tls
-    - http
+sniffer:
+  enable: false
+  ## 对 redir-host 类型识别的流量进行强制嗅探
+  ## 如：Tun、Redir 和 TProxy 并 DNS 为 redir-host 皆属于
+  # force-dns-mapping: false
+  ## 对所有未获取到域名的流量进行强制嗅探
+  # parse-pure-ip: false
+  # 是否使用嗅探结果作为实际访问，默认 true
+  # 全局配置，优先级低于 sniffer.sniff 实际配置
+  override-destination: false
+  sniff: # TLS 默认如果不配置 ports 默认嗅探 443
+    TLS:
+    #  ports: [443, 8443]
+    
+    # 默认嗅探 80
+    HTTP: # 需要嗅探的端口
+      
+      ports: [80, 8080-8880]
+      # 可覆盖 sniffer.override-destination
+      override-destination: true
   skip-domain:                   #列表中的sni字段，保留mapping结果，不通过嗅探还原域名
                                  #优先级比force-domain高
     - 'Mijia Cloud'              #米家设备，建议加
@@ -28,11 +43,13 @@ sniffer:
     
   force-domain:                  #需要强制嗅探的域名，默认只对IP嗅探
   # - '+'                        #去掉注释后等于全局嗅探
-    - 'google.com'
+    - '+.google.com'
+    - +.v2ex.com
 
 dns:
   enable: true
-  listen: ':53'
+  listen: ':5353'
+  prefer-h3: true # 开启 DoH 支持 HTTP/3，将并发尝试
   ipv6: true # when the false, response to AAAA questions will be empty
 
   # These nameservers are used to resolve the DNS nameserver hostnames below.
@@ -42,6 +59,9 @@ dns:
     - 119.29.29.29
     - 1.0.0.1
   #   - 8.8.4.4
+
+  # 查询 hosts
+  use-hosts: true 
 
   #指定域名使用自定义DNS解析
   nameserver-policy:    
@@ -105,19 +125,22 @@ dns:
   # The answers from fallback servers are used when the GEOIP country
   # is not `CN`.
   fallback:
-    # - https://dns.google/dns-query
-    # - https://cloudflare-dns.com/dns-query
+    # 【Meta专属】
+    # 指定 DNS 过代理查询，ProxyGroupName 为策略组名或节点名，过代理配置优先于配置出口网卡，当找不到策略组或节点名则设置为出口网卡
+    - 'https://dns.google/dns-query#🔰 节点选择'
+    - 'https://cloudflare-dns.com/dns-query#🔰 节点选择'
+
     # - "[2001:4860:4860::8888]:53" # Google ipv6 dns
     # - tls://1.0.0.1
-    - 1.0.0.1
-    # - https://1.1.1.1/dns-query # DNS over HTTPS
-    # - https://8.8.8.8/dns-query
+    # - 1.0.0.1
+    # - https://1.0.0.1/dns-query # DNS over HTTPS
+    # - https://8.8.4.4/dns-query
     # - tls://8.8.4.4
     # - tls://dns.google
     # - tls://8.8.8.8
     # - 1.1.1.1
     # - https://dns.rubyfish.cn/dns-query
-    - 8.8.4.4
+    # - 8.8.4.4
     # - tls://dns.rubyfish.cn:853 # DNS over TLS
   # DoH and DoT fallback server not work in scut. Don't use.
 
@@ -141,7 +164,6 @@ dns:
     # 例：使用 https://www.gstatic.com/generate_204 测 DIRECT 会 timeout
     # geosite:                         
     #   - gfw
-    #   - 'geolocation-!cn'
     ipcidr:
       # - 0.0.0.0/8
       # - ::/128
