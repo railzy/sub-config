@@ -63,6 +63,10 @@ dns:
   # 查询 hosts
   use-hosts: true 
 
+  proxy-server-nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+
   #指定域名使用自定义DNS解析
   nameserver-policy:    
     'blhxstatic.yo-star.com':   'https://dns.alidns.com/dns-query'
