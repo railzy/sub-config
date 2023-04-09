@@ -23,7 +23,7 @@ version = 1
   # import = "snippets/groups_forcerule.toml"
 
 [[custom_groups]]
-  name = "🔰 节点选择"
+  name = "节点选择"
   type = "select"
   rule = [
     "[]AutoJP",
@@ -43,7 +43,7 @@ version = 1
   rule = [
     "[]AutoUSA",
     "[]AutoJP",
-    "[]🔰 节点选择",
+    "[]节点选择",
     "(美|USA|America)",
     "(日|jp|Japan)",
     "(台|tw|Taiwan)",
@@ -55,12 +55,12 @@ version = 1
 [[custom_groups]]
   name = "Spotify"
   type = "select"
-  rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
+  rule = ["[]节点选择", "[]🎯 全球直连", ".*"]
 
 [[custom_groups]]
   name = "🎥 NETFLIX"
   type = "select"
-  rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
+  rule = ["[]节点选择", "[]🎯 全球直连", ".*"]
 
 [[custom_groups]]
   name = "ff14"
@@ -80,33 +80,33 @@ version = 1
 [[custom_groups]]
   name = "🌍 国外媒体"
   type = "select"
-  rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
+  rule = ["[]节点选择", "[]🎯 全球直连", ".*"]
 
 [[custom_groups]]
   name = "⛔️ 广告拦截"
   type = "select"
-  rule = ["[]🛑 全球拦截", "[]🎯 全球直连", "[]REJECT", "[]DIRECT", "[]🔰 节点选择"]
+  rule = ["[]🛑 全球拦截", "[]🎯 全球直连", "[]REJECT", "[]DIRECT", "[]节点选择"]
 
 [[custom_groups]]
   name = "🛑 全球拦截"
   type = "select"
-  rule = ["[]REJECT", "[]DIRECT", "[]🔰 节点选择"]
+  rule = ["[]REJECT", "[]DIRECT", "[]节点选择"]
 
 [[custom_groups]]
   name = "🎯 全球直连"
   type = "select"
-  rule = ["[]DIRECT", "[]🔰 节点选择", ".*"]
+  rule = ["[]DIRECT", "[]节点选择", ".*"]
 
 [[custom_groups]]
   name = "EpicGames"
   type = "select"
-  rule = ["[]DIRECT", "[]🔰 节点选择", ".*"]
+  rule = ["[]DIRECT", "[]节点选择", ".*"]
 
 [[custom_groups]]
   name = "Ⓜ️ 微软服务"
   type = "select"
   rule = [
-    "[]🔰 节点选择",
+    "[]节点选择",
     "[]AutoJP",
     "[]AutoUSA",
     "[]AutoHK",
@@ -118,13 +118,13 @@ version = 1
 [[custom_groups]]
   name = "Xbox"
   type = "select"
-  rule = ["[]Ⓜ️ 微软服务", "[]REJECT", "[]🔰 节点选择", "[]DIRECT", ".*"]
+  rule = ["[]Ⓜ️ 微软服务", "[]REJECT", "[]节点选择", "[]DIRECT", ".*"]
 
 [[custom_groups]]
   name = "eh"
   type = "select"
   rule = [
-    "[]🔰 节点选择",
+    "[]节点选择",
     "[]AutoUSA",
     "[]AutoJP",
     "[]AutoHK",
@@ -140,18 +140,18 @@ version = 1
 [[custom_groups]]
   name = "tw"
   type = "select"
-  rule = ["[]AutoTW", "(台|tw|Taiwan)", "(港|hk|Hong Kong)", "[]🔰 节点选择", ".*"]
+  rule = ["[]AutoTW", "(台|tw|Taiwan)", "(港|hk|Hong Kong)", "[]节点选择", ".*"]
 
 [[custom_groups]]
   name = "hktw"
   type = "select"
-  rule = ["[]AutoHK", "(港|hk|Hong Kong)", "(台|tw|Taiwan)", "[]🔰 节点选择", ".*"]
+  rule = ["[]AutoHK", "(港|hk|Hong Kong)", "(台|tw|Taiwan)", "[]节点选择", ".*"]
 
 [[custom_groups]]
   name = "github"
   type = "select"
   rule = [
-    "[]🔰 节点选择",
+    "[]节点选择",
     "[]AutoUSA",
     "[]AutoJP",
     "[]AutoHK",
@@ -167,17 +167,17 @@ version = 1
 [[custom_groups]]
   name = "🐟 漏网之鱼"
   type = "select"
-  rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
+  rule = ["[]节点选择", "[]🎯 全球直连", ".*"]
 
 [[custom_groups]]
   name = "AzurLane"
   type = "select"
-  rule = ["[]DIRECT", "[]🔰 节点选择", ".*"]
+  rule = ["[]DIRECT", "[]节点选择", ".*"]
 
 [[custom_groups]]
   name = "📲 电报信息"
   type = "select"
-  rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
+  rule = ["[]节点选择", "[]🎯 全球直连", ".*"]
 
 [[custom_groups]]
   name = "🌏 国内媒体"
@@ -186,13 +186,13 @@ version = 1
     "[]🎯 全球直连",
     "[]DIRECT",
     "(HGC|HKBN|PCCW|HKT|深台|彰化|新北|台|hk|港|tw)",
-    "[]🔰 节点选择",
+    "[]节点选择",
   ]
 
 [[custom_groups]]
   name = "🍎 苹果服务"
   type = "select"
-  rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
+  rule = ["[]节点选择", "[]🎯 全球直连", ".*"]
 
 [[custom_groups]]
   name     = "AutoJP"
@@ -240,7 +240,7 @@ version = 1
   group   = "🎯 全球直连"
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/mycn.list"
 [[rulesets]]
-  group   = "🔰 节点选择"
+  group   = "节点选择"
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/myglobal.list"
 [[rulesets]]
   group   = "AzurLane"
@@ -369,7 +369,7 @@ version = 1
   group   = "📲 电报信息"
   ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/DivineEngine/Surge/Ruleset/Extra/Telegram/Telegram.list"
 #[[rulesets]] # geoip 够了
-#  group   = "🔰 节点选择"
+#  group   = "节点选择"
 #  ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/DivineEngine/Surge/Ruleset/Global.list"
 [[rulesets]]
   group   = "🍎 苹果服务"

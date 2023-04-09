@@ -127,8 +127,8 @@ dns:
   fallback:
     # 【Meta专属】
     # 指定 DNS 过代理查询，ProxyGroupName 为策略组名或节点名，过代理配置优先于配置出口网卡，当找不到策略组或节点名则设置为出口网卡
-    - 'https://dns.google/dns-query#🔰 节点选择'
-    - 'https://cloudflare-dns.com/dns-query#🔰 节点选择'
+    - 'https://dns.google/dns-query#节点选择'
+    - 'https://cloudflare-dns.com/dns-query#节点选择'
 
     # - "[2001:4860:4860::8888]:53" # Google ipv6 dns
     # - tls://1.0.0.1
