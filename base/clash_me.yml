@@ -124,24 +124,29 @@ dns:
   # to the servers in this section along with servers in `nameservers`.
   # The answers from fallback servers are used when the GEOIP country
   # is not `CN`.
+  # fallback 默认 *直连* 查询，只用于判断 GEOIP 规则和 DIRECT 的连接
+  # 若判断域名需要代理，域名将被传递到远端服务器重新进行解析和连接
+  # 需要填入可以 *直连* 的服务器，否则会出现问题
+  # 理论上只要结果能区分是否走代理即可，不要求结果准确
+  # 可以考虑速度优先
   fallback:
     # 【Meta专属】
     # 指定 DNS 过代理查询，ProxyGroupName 为策略组名或节点名，过代理配置优先于配置出口网卡，当找不到策略组或节点名则设置为出口网卡
-    # - 'https://dns.google/dns-query#节点选择'
-    # - 'https://cloudflare-dns.com/dns-query#节点选择'
-
+    # - 'https://dns.google/dns-query'
+    # - 'https://cloudflare-dns.com/dns-query' # 无法直连，无法使用
     # - "[2001:4860:4860::8888]:53" # Google ipv6 dns
-    # - tls://1.0.0.1
-    # - 1.0.0.1
-    - 'https://1.0.0.1/dns-query#节点选择' # DNS over HTTPS
-    - 'https://8.8.4.4/dns-query#节点选择'
-    # - tls://8.8.4.4
-    # - tls://dns.google
-    # - tls://8.8.8.8
+    # - tls://1.0.0.1 # 无法直连，无法使用
+    - tls://1.1.1.1 # 可以直连
+    # - 1.0.0.1 # 可以直连
+    # - 'https://1.0.0.1/dns-query' # 无法直连，无法使用
+    # DNS over HTTPS
+    - 'https://1.1.1.1/dns-query' # 可以直连
+    # - 'https://8.8.4.4/dns-query' # 无法直连，无法使用
+    # - tls://8.8.4.4 # 无法直连，无法使用
+    # - tls://dns.google # 无法直连，无法使用
+    # - tls://8.8.8.8 # 无法直连，无法使用
     # - 1.1.1.1
-    # - https://dns.rubyfish.cn/dns-query
     # - 8.8.4.4
-    # - tls://dns.rubyfish.cn:853 # DNS over TLS
   # DoH and DoT fallback server not work in scut. Don't use.
 
 
