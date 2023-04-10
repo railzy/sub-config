@@ -129,8 +129,9 @@ dns:
   # The answers from fallback servers are used when the GEOIP country
   # is not `CN`.
   # fallback 默认 *直连* 查询，只用于判断 GEOIP 规则和 DIRECT 的连接
+  # 只有当 nameservers 结果满足 fallback-filter 的条件，才会使用 fallback 的结果
   # 若判断域名需要代理，域名将被传递到远端服务器重新进行解析和连接
-  # 需要填入可以 *直连* 的服务器，否则会出现问题
+  # 必须使用可以 *直连* 的服务器，否则会出现问题
   # 理论上只要结果能区分是否走代理即可，不要求结果准确
   # 可以考虑速度优先
   fallback:
