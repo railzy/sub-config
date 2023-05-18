@@ -215,8 +215,9 @@ version = 1
   name     = "AutoJP"
   type     = "load-balance"
   rule     = ["(日|jp|Japan)"]
-  url      = "https://cp.cloudflare.com/generate_204"
+  url      = "https://www.gstatic.com/generate_204"
   interval = 300
+  strategy = "sticky-sessions"
 
 [[custom_groups]]
   name = "AutoUSA"
