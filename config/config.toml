@@ -213,9 +213,9 @@ version = 1
 
 [[custom_groups]]
   name     = "AutoJP"
-  type     = "fallback"
-  rule     = ["(日|jp|Japan)", "(台|tw|Taiwan)", "(港|hk|Hong Kong)", ".*", "[]DIRECT"]
-  url      = "https://www.gstatic.com/generate_204"
+  type     = "load-balance"
+  rule     = ["(日|jp|Japan)"]
+  url      = "https://cp.cloudflare.com/generate_204"
   interval = 300
 
 [[custom_groups]]
