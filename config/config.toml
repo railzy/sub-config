@@ -216,8 +216,8 @@ version = 1
   type     = "load-balance"
   rule     = ["(日|jp|Japan)"]
   url      = "https://www.gstatic.com/generate_204"
-  interval = 300
-  strategy = "sticky-sessions"
+  interval = 150
+  #strategy = "sticky-sessions"
 
 [[custom_groups]]
   name = "AutoUSA"
