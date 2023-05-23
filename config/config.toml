@@ -26,7 +26,7 @@ version = 1
   name = "🔰 节点选择"
   type = "select"
   rule = [
-    "[]AutoJP",
+    "[]JP均衡",
     "[]AutoUSA",
     "[]AutoHK",
     "[]AutoTW",
@@ -42,7 +42,7 @@ version = 1
   type = "select"
   rule = [
     "[]AutoUSA",
-    "[]AutoJP",
+    "[]JP均衡",
     "[]🔰 节点选择",
     "(美|USA|America)",
     "(日|jp|Japan)",
@@ -66,7 +66,7 @@ version = 1
   name = "ff14"
   type = "select"
   rule = [
-    "[]AutoJP",
+    "[]JP均衡",
     "[]AutoUSA",
     "[]AutoHK",
     "[]AutoTW",
@@ -107,7 +107,7 @@ version = 1
   type = "select"
   rule = [
     "[]🔰 节点选择",
-    "[]AutoJP",
+    "[]JP均衡",
     "[]AutoUSA",
     "[]AutoHK",
     "[]AutoTW",
@@ -126,7 +126,7 @@ version = 1
   rule = [
     "[]🔰 节点选择",
     "[]AutoUSA",
-    "[]AutoJP",
+    "[]JP均衡",
     "[]AutoHK",
     "[]AutoTW",
     "[]DIRECT",
@@ -143,7 +143,7 @@ version = 1
   rule = [
     "[]AutoUSA",
     "[]🔰 节点选择",
-    "[]AutoJP",
+    "[]JP均衡",
     "[]AutoHK",
     "[]AutoTW",
     "[]DIRECT",
@@ -157,12 +157,26 @@ version = 1
 [[custom_groups]]
   name = "tw"
   type = "select"
-  rule = ["[]AutoTW", "(台|tw|Taiwan)", "(港|hk|Hong Kong)", "[]🔰 节点选择", ".*"]
+  rule = [
+    "[]AutoTW",
+    "[]DIRECT",
+    "(台|tw|Taiwan)",
+    "(港|hk|Hong Kong)",
+    "[]🔰 节点选择",
+    ".*",
+  ]
 
 [[custom_groups]]
   name = "hktw"
   type = "select"
-  rule = ["[]AutoHK", "(港|hk|Hong Kong)", "(台|tw|Taiwan)", "[]🔰 节点选择", ".*"]
+  rule = [
+    "[]AutoHK",
+    "[]DIRECT",
+    "(港|hk|Hong Kong)",
+    "(台|tw|Taiwan)",
+    "[]🔰 节点选择",
+    ".*",
+  ]
 
 [[custom_groups]]
   name = "github"
@@ -170,7 +184,7 @@ version = 1
   rule = [
     "[]🔰 节点选择",
     "[]AutoUSA",
-    "[]AutoJP",
+    "[]JP均衡",
     "[]AutoHK",
     "[]AutoTW",
     "(美|USA|America)",
@@ -212,7 +226,7 @@ version = 1
   rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
 
 [[custom_groups]]
-  name     = "AutoJP"
+  name     = "JP均衡"
   type     = "load-balance"
   rule     = ["(日|jp|Japan)"]
   url      = "https://www.gstatic.com/generate_204"
