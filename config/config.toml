@@ -251,9 +251,17 @@ version = 1
   strategy = "sticky-sessions"
 
 [[custom_groups]]
+  name     = "USA均衡"
+  type     = "load-balance"
+  rule     = ["(美|USA|America)"]
+  url      = "https://www.gstatic.com/generate_204"
+  interval = 300
+
+[[custom_groups]]
   name = "AutoUSA"
   type = "fallback"
   rule = [
+    "[]USA均衡",
     "(美|USA|America)",
     "(日|jp|Japan)",
     "(台|tw|Taiwan)",
