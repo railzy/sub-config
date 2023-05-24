@@ -206,6 +206,23 @@ version = 1
   rule = ["[]DIRECT", "[]🔰 节点选择", ".*"]
 
 [[custom_groups]]
+  name = "ACT"
+  type = "select"
+  rule = [
+    "[]DIRECT",
+    "[]🔰 节点选择",
+    "[]AutoUSA",
+    "[]JP均衡",
+    "[]AutoHK",
+    "[]AutoTW",
+    "(美|USA|America)",
+    "(日|jp|Japan)",
+    "(台|tw|Taiwan)",
+    "(港|hk|Hong Kong)",
+    ".*",
+  ]
+
+[[custom_groups]]
   name = "📲 电报信息"
   type = "select"
   rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
@@ -269,6 +286,9 @@ version = 1
 [[rulesets]]
   group   = "ff14"
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/ff14.list"
+[[rulesets]]
+  group   = "ACT"
+  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/AdvancedCombatTracker.list"
 [[rulesets]]
   group   = "DIRECT"
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/MyAlwaysDirect.list"
