@@ -25,3 +25,7 @@ DOMAIN,configuration.osk2.com
 PROCESS-NAME,uu.exe
 PROCESS-NAME,uu_render.exe
 PROCESS-NAME,uu_ball.exe
+
+# 雷神加速器
+PROCESS-NAME,leigod.exe
+PROCESS-NAME,leishenSdk.exe
