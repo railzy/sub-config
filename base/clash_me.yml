@@ -51,7 +51,7 @@ sniffer:
 
 dns:
   enable: true
-  listen: ':5353'
+  listen: ':53'
   prefer-h3: true # 开启 DoH 支持 HTTP/3，将并发尝试
   ipv6: true # when the false, response to AAAA questions will be empty
 
