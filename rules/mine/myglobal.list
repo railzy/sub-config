@@ -19,3 +19,6 @@ DOMAIN,dl.google.com
 DOMAIN-SUFFIX,dlsite.com
 
 PROCESS-NAME,com.PigeonGames.Phigros
+
+DOMAIN-SUFFIX,v2ex.com
+
