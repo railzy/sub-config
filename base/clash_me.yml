@@ -9,7 +9,7 @@ ipv6: true
 geodata-mode: true         
 
 # TCP 并发连接所有 IP, 将使用最快握手的 TCP
-tcp-concurrent: true
+# tcp-concurrent: true
 
 # 实验性功能
 # experimental:
