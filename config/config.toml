@@ -31,9 +31,9 @@ version = 1
     "[]AutoHK",
     "[]AutoTW",
     "[]DIRECT",
-    "(日|jp|Japan)",
-    "(港|hk|Hong Kong)",
-    "(台|tw|Taiwan)",
+    "(日|jp|Japan|JP)",
+    "(港|hk|Hong Kong|HK)",
+    "(台|tw|Taiwan|TW)",
     ".*",
   ]
 
@@ -44,10 +44,10 @@ version = 1
     "[]AutoUSA",
     "[]AutoJP",
     "[]🔰 节点选择",
-    "(美|USA|America)",
-    "(日|jp|Japan)",
-    "(台|tw|Taiwan)",
-    "(港|hk|Hong Kong)",
+    "(美|USA|America|US)",
+    "(日|jp|Japan|JP)",
+    "(台|tw|Taiwan|TW)",
+    "(港|hk|Hong Kong|HK)",
     ".*",
     "[]DIRECT",
   ]
@@ -71,9 +71,9 @@ version = 1
     "[]AutoHK",
     "[]AutoTW",
     "[]DIRECT",
-    "(日|jp|Japan)",
-    "(港|hk|Hong Kong)",
-    "(台|tw|Taiwan)",
+    "(日|jp|Japan|JP)",
+    "(港|hk|Hong Kong|HK)",
+    "(台|tw|Taiwan|TW)",
     ".*",
   ]
 
@@ -130,10 +130,10 @@ version = 1
     "[]AutoHK",
     "[]AutoTW",
     "[]DIRECT",
-    "(美|USA|America)",
-    "(日|jp|Japan)",
-    "(港|hk|Hong Kong)",
-    "(台|tw|Taiwan)",
+    "(美|USA|America|US)",
+    "(日|jp|Japan|JP)",
+    "(港|hk|Hong Kong|HK)",
+    "(台|tw|Taiwan|TW)",
     ".*",
   ]
 
@@ -147,10 +147,10 @@ version = 1
     "[]AutoHK",
     "[]AutoTW",
     "[]DIRECT",
-    "(美|USA|America)",
-    "(日|jp|Japan)",
-    "(港|hk|Hong Kong)",
-    "(台|tw|Taiwan)",
+    "(美|USA|America|US)",
+    "(日|jp|Japan|JP)",
+    "(港|hk|Hong Kong|HK)",
+    "(台|tw|Taiwan|TW)",
     ".*",
   ]
 
@@ -160,8 +160,8 @@ version = 1
   rule = [
     "[]AutoTW",
     "[]DIRECT",
-    "(台|tw|Taiwan)",
-    "(港|hk|Hong Kong)",
+    "(台|tw|Taiwan|TW)",
+    "(港|hk|Hong Kong|HK)",
     "[]🔰 节点选择",
     ".*",
   ]
@@ -172,8 +172,8 @@ version = 1
   rule = [
     "[]AutoHK",
     "[]DIRECT",
-    "(港|hk|Hong Kong)",
-    "(台|tw|Taiwan)",
+    "(港|hk|Hong Kong|HK)",
+    "(台|tw|Taiwan|TW)",
     "[]🔰 节点选择",
     ".*",
   ]
@@ -187,10 +187,10 @@ version = 1
     "[]AutoJP",
     "[]AutoHK",
     "[]AutoTW",
-    "(美|USA|America)",
-    "(日|jp|Japan)",
-    "(台|tw|Taiwan)",
-    "(港|hk|Hong Kong)",
+    "(美|USA|America|US)",
+    "(日|jp|Japan|JP)",
+    "(台|tw|Taiwan|TW)",
+    "(港|hk|Hong Kong|HK)",
     ".*",
     "[]DIRECT",
   ]
@@ -218,7 +218,7 @@ version = 1
     "(美|USA|America)",
     "(日|jp|Japan)",
     "(台|tw|Taiwan)",
-    "(港|hk|Hong Kong)",
+    "(?!.*10x).*(港|hk|Hong Kong|HK)",
     ".*",
   ]
 
@@ -255,10 +255,10 @@ version = 1
   type = "fallback"
   rule = [
     # "[]JP均衡",
-    "(日|jp|Japan)",
-    "(台|tw|Taiwan)",
-    "(港|hk|Hong Kong)",
-    "(美|USA|America)",
+    "(日|jp|Japan|JP)",
+    "(台|tw|Taiwan|TW)",
+    "(?!.*10x).*(港|hk|Hong Kong|HK)",
+    "(美|USA|America|US)",
     ".*",
     "[]DIRECT",
   ]
@@ -277,10 +277,10 @@ version = 1
   type = "fallback"
   rule = [
     # "[]USA均衡",
-    "(美|USA|America)",
-    "(日|jp|Japan)",
-    "(台|tw|Taiwan)",
-    "(港|hk|Hong Kong)",
+    "(美|USA|America|US)",
+    "(日|jp|Japan|JP)",
+    "(台|tw|Taiwan|TW)",
+    "(?!.*10x).*(港|hk|Hong Kong|HK)",
     ".*",
     "[]DIRECT",
   ]
@@ -288,17 +288,29 @@ version = 1
   interval = 300
 
 [[custom_groups]]
-  name     = "AutoHK"
-  type     = "fallback"
-  rule     = ["(港|hk|Hong Kong|HK)", "(台|tw|Taiwan)", "(日|jp|Japan)", ".*", "[]DIRECT"]
-  url      = "https://www.gstatic.com/generate_204"
+  name = "AutoHK"
+  type = "fallback"
+  rule = [
+    "(?!.*10x).*(港|hk|Hong Kong|HK)",
+    "(台|tw|Taiwan|TW)",
+    "(日|jp|Japan|JP)",
+    ".*",
+    "[]DIRECT",
+  ]
+  url = "https://www.gstatic.com/generate_204"
   interval = 300
 
 [[custom_groups]]
-  name     = "AutoTW"
-  type     = "fallback"
-  rule     = ["(台|tw|Taiwan)", "(港|hk|Hong Kong)", "(日|jp|Japan)", ".*", "[]DIRECT"]
-  url      = "https://www.gstatic.com/generate_204"
+  name = "AutoTW"
+  type = "fallback"
+  rule = [
+    "(台|tw|Taiwan|TW)",
+    "(?!.*10x).*(港|hk|Hong Kong|HK)",
+    "(日|jp|Japan|JP)",
+    ".*",
+    "[]DIRECT",
+  ]
+  url = "https://www.gstatic.com/generate_204"
   interval = 300
 
 # 个人规则，优先级从前往后
