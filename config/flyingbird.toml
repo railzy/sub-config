@@ -245,7 +245,7 @@ version = 1
 [[custom_groups]]
   name     = "JP均衡"
   type     = "load-balance"
-  rule     = ["(日|jp|Japan|JP)"]
+  rule     = ["(日|jp|Japan)"]
   url      = "https://www.gstatic.com/generate_204"
   interval = 150
   strategy = "sticky-sessions"
@@ -254,7 +254,7 @@ version = 1
   name = "AutoJP"
   type = "fallback"
   rule = [
-    # "[]JP均衡",
+    "[]JP均衡",
     "(日|jp|Japan)",
     "(台|tw|Taiwan)",
     "(港|hk|Hong Kong)",
@@ -268,7 +268,7 @@ version = 1
 [[custom_groups]]
   name     = "USA均衡"
   type     = "load-balance"
-  rule     = ["(美|USA|America|US)"]
+  rule     = ["(美|USA|America)"]
   url      = "https://www.gstatic.com/generate_204"
   interval = 300
 
@@ -276,7 +276,7 @@ version = 1
   name = "AutoUSA"
   type = "fallback"
   rule = [
-    # "[]USA均衡",
+    "[]USA均衡",
     "(美|USA|America)",
     "(日|jp|Japan)",
     "(台|tw|Taiwan)",
@@ -290,7 +290,7 @@ version = 1
 [[custom_groups]]
   name     = "AutoHK"
   type     = "fallback"
-  rule     = ["(港|hk|Hong Kong|HK)", "(台|tw|Taiwan)", "(日|jp|Japan)", ".*", "[]DIRECT"]
+  rule     = ["(港|hk|Hong Kong)", "(台|tw|Taiwan)", "(日|jp|Japan)", ".*", "[]DIRECT"]
   url      = "https://www.gstatic.com/generate_204"
   interval = 300
 
