@@ -26,9 +26,9 @@ version = 1
   name = "🔰 节点选择"
   type = "select"
   rule = [
+    "[]AutoHK",
     "[]AutoJP",
     "[]AutoUSA",
-    "[]AutoHK",
     "[]AutoTW",
     "[]DIRECT",
     "(日|jp|Japan|JP)",
