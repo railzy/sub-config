@@ -291,7 +291,7 @@ version = 1
   name = "AutoHK"
   type = "fallback"
   rule = [
-    "(?!.*10x|5x).*(港|hk|Hong Kong|HK)",
+    "(?!.*5x).*(港|hk|Hong Kong|HK)",
     "(台|tw|Taiwan|TW)",
     "(日|jp|Japan|JP)",
     ".*",
