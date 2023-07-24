@@ -420,15 +420,15 @@ version = 1
   group   = "⛔️ 广告拦截"
   type    = "clash-domain"
   ruleset = "https://anti-ad.net/clash.yaml"
-[[rulesets]]
-  group   = "⛔️ 广告拦截"
-  ruleset = "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adblock4limbo.list"
-[[rulesets]]
-  group   = "⛔️ 广告拦截"
-  ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanEasyList.list"
-[[rulesets]]
-  group   = "⛔️ 广告拦截"
-  ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanEasyListChina.list"
+#[[rulesets]]
+#  group   = "⛔️ 广告拦截"
+#  ruleset = "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adblock4limbo.list"
+#[[rulesets]]
+ # group   = "⛔️ 广告拦截"
+ # ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanEasyList.list"
+#[[rulesets]]
+#  group   = "⛔️ 广告拦截"
+#  ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanEasyListChina.list"
 [[rulesets]]
   group   = "🛑 全球拦截"
   ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/DivineEngine/Surge/Ruleset/Guard/Hijacking.list"
