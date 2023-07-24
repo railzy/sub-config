@@ -334,16 +334,15 @@ version = 1
 # 个人规则，优先级从前往后
 [[rulesets]]
   group   = "🤖OpenAI"
-  type    = "clash-classic"
-  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/OpenAI.yaml"
+  type    = "clash-domain"
+  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/OpenAI.list"
 [[rulesets]]
   group   = "ff14patch"
   type    = "clash-domain"
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/ff14patch.yaml"
 [[rulesets]]
   group   = "Bing"
-  type    = "clash-classic"
-  ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.yaml"
+  ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.list"
 [[rulesets]]
   group   = "ff14"
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/ff14.list"
@@ -389,20 +388,17 @@ version = 1
 
 [[rulesets]]
   group   = "Spotify"
-  type    = "clash-classic"
-  ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml"
+  ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.list"
 
 
 [[rulesets]]
   group   = "github"
-  type    = "clash-classic"
-  ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml"
+  ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.list"
 
 
 [[rulesets]]
   group   = "eh"
-  type    = "clash-classic"
-  ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/EHGallery/EHGallery.yaml"
+  ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/EHGallery/EHGallery.list"
 
   # 有误判，弃用
   # [[rulesets]]
@@ -415,8 +411,7 @@ version = 1
 #  ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list"
 [[rulesets]]
   group   = "DIRECT"
-  type    = "clash-classic"
-  ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml"
+  ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
 
 # 广告规则要放前面否则没用
 [[rulesets]]
