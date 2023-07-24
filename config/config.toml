@@ -240,20 +240,22 @@ version = 1
     ".*",
   ]
 
-[[custom_groups]]
-  name = "📲 电报信息"
-  type = "select"
-  rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
+# 没啥用
+# [[custom_groups]]
+#   name = "📲 电报信息"
+#   type = "select"
+#   rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
 
-[[custom_groups]]
-  name = "🌏 国内媒体"
-  type = "select"
-  rule = [
-    "[]🎯 全球直连",
-    "[]DIRECT",
-    "(HGC|HKBN|PCCW|HKT|深台|彰化|新北|台|hk|港|tw)",
-    "[]🔰 节点选择",
-  ]
+# 没啥用
+# [[custom_groups]]
+#   name = "🌏 国内媒体"
+#   type = "select"
+#   rule = [
+#     "[]🎯 全球直连",
+#     "[]DIRECT",
+#     "(HGC|HKBN|PCCW|HKT|深台|彰化|新北|台|hk|港|tw)",
+#     "[]🔰 节点选择",
+#   ]
 
 [[custom_groups]]
   name = "🍎 苹果服务"
@@ -335,7 +337,7 @@ version = 1
 [[rulesets]]
   group   = "🤖OpenAI"
   type    = "clash-domain"
-  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/OpenAI.list"
+  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/OpenAI.yaml"
 [[rulesets]]
   group   = "ff14patch"
   type    = "clash-domain"
@@ -473,13 +475,14 @@ version = 1
 #   group   = "🌏 国内媒体"
 #   ruleset = "rules/lhie1/Surge/Surge 3/Provider/Media/Youku.list"
 # 直接整合上述的几条
-[[rulesets]]
-  group   = "🌏 国内媒体"
-  ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaMedia.list"
+# [[rulesets]]
+#   group   = "🌏 国内媒体"
+#   ruleset = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaMedia.list"
 
-[[rulesets]]
-  group   = "📲 电报信息"
-  ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/DivineEngine/Surge/Ruleset/Extra/Telegram/Telegram.list"
+
+# [[rulesets]] # 用不上
+#   group   = "📲 电报信息"
+#   ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/DivineEngine/Surge/Ruleset/Extra/Telegram/Telegram.list"
 #[[rulesets]] # geoip 够了
 #  group   = "🔰 节点选择"
 #  ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/DivineEngine/Surge/Ruleset/Global.list"
