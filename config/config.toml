@@ -121,6 +121,19 @@ version = 1
   rule = ["[]Ⓜ️ 微软服务", "[]REJECT", "[]🔰 节点选择", "[]DIRECT", ".*"]
 
 [[custom_groups]]
+  name = "Bing"
+  type = "select"
+  rule = [
+    "[]🔰 节点选择",
+    "[]AutoJP",
+    "[]AutoUSA",
+    "[]AutoHK",
+    "[]AutoTW",
+    "[]🎯 全球直连",
+    ".*",
+  ]
+
+[[custom_groups]]
   name = "🤖OpenAI"
   type = "select"
   rule = [
@@ -199,6 +212,11 @@ version = 1
   name = "🐟 漏网之鱼"
   type = "select"
   rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
+
+[[custom_groups]]
+  name = "ff14patch"
+  type = "select"
+  rule = ["[]DIRECT", "[]🔰 节点选择", ".*"]
 
 [[custom_groups]]
   name = "AzurLane"
@@ -317,7 +335,15 @@ version = 1
 [[rulesets]]
   group   = "🤖OpenAI"
   type    = "clash-domain"
-  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/OpenAI.list"
+  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/OpenAI.yaml"
+[[rulesets]]
+  group   = "ff14patch"
+  type    = "clash-domain"
+  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/ff14patch.yaml"
+[[rulesets]]
+  group   = "Bing"
+  type    = "clash-domain"
+  ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing_No_Resolve.yaml"
 [[rulesets]]
   group   = "ff14"
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/ff14.list"
