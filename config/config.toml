@@ -427,14 +427,21 @@ version = 1
 # subconverter 默认规则，不需要改动，会被上面的覆盖
 [[rulesets]]
   group   = "Ⓜ️ 微软服务"
-  ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list"
+  # type    = "clash-classic"
+  ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.list"
 
 [[rulesets]]
   group   = "🎥 NETFLIX"
-  ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/DivineEngine/Surge/Ruleset/StreamingMedia/Video/Netflix.list"
+  type    = "clash-ipcidr"
+  ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix_IP.yaml"
+[[rulesets]]
+  group   = "🎥 NETFLIX"
+  type    = "clash-classic"
+  ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml"
 [[rulesets]]
   group   = "🌍 国外媒体"
-  ruleset = "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/rules/DivineEngine/Surge/Ruleset/StreamingMedia/Streaming.list"
+  type    = "clash-domain"
+  ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Domain.txt"
 
   # [[rulesets]]
   #   group   = "🌏 国内媒体"
