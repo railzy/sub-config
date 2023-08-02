@@ -26,8 +26,8 @@ version = 1
   name = "🔰 节点选择"
   type = "select"
   rule = [
-    "[]AutoHK",
     "[]AutoJP",
+    "[]AutoHK",
     "[]AutoUSA",
     "[]AutoTW",
     "[]DIRECT",
@@ -274,7 +274,7 @@ version = 1
   name = "AutoJP"
   type = "fallback"
   rule = [
-    # "[]JP均衡",
+    "[]JP均衡",
     "(日|jp|Japan|JP)",
     "(台|tw|Taiwan|TW)",
     "(?!.*(5x|10x)).*(港|hk|Hong Kong|HK)",
