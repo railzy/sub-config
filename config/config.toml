@@ -265,7 +265,7 @@ version = 1
 [[custom_groups]]
   name     = "JP均衡"
   type     = "load-balance"
-  rule     = ["(日|jp|Japan|JP)"]
+  rule     = ["(日本|jp|Japan|JP)"]
   url      = "https://www.gstatic.com/generate_204"
   interval = 150
   strategy = "sticky-sessions"
@@ -275,7 +275,7 @@ version = 1
   type = "fallback"
   rule = [
     "[]JP均衡",
-    "(日|jp|Japan|JP)",
+    "(日本|jp|Japan|JP)",
     "(台|tw|Taiwan|TW)",
     "(?!.*(5x|10x)).*(港|hk|Hong Kong|HK)",
     "(美|USA|America|US)",
