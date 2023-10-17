@@ -262,19 +262,19 @@ version = 1
   #   type = "select"
   #   rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
 
-[[custom_groups]]
-  name     = "JP均衡"
-  type     = "load-balance"
-  rule     = ["(日本|jp|Japan|JP)"]
-  url      = "https://www.gstatic.com/generate_204"
-  interval = 150
-  strategy = "sticky-sessions"
+# [[custom_groups]]
+#   name     = "JP均衡"
+#   type     = "load-balance"
+#   rule     = ["(日本|jp|Japan|JP)"]
+#   url      = "https://www.gstatic.com/generate_204"
+#   interval = 150
+#   strategy = "sticky-sessions"
 
 [[custom_groups]]
   name = "AutoJP"
   type = "fallback"
   rule = [
-    "[]JP均衡",
+    # "[]JP均衡",
     "(日本|jp|Japan|JP)",
     "(台|tw|Taiwan|TW)",
     "(?!.*(5x|10x)).*(港|hk|Hong Kong|HK)",
