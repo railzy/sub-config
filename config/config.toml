@@ -106,6 +106,7 @@ version = 1
   name = "Ⓜ️ 微软服务"
   type = "select"
   rule = [
+    "[]DIRECT",
     "[]🔰 节点选择",
     "[]AutoJP",
     "[]AutoUSA",
@@ -262,13 +263,13 @@ version = 1
   #   type = "select"
   #   rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
 
-# [[custom_groups]]
-#   name     = "JP均衡"
-#   type     = "load-balance"
-#   rule     = ["(日本|jp|Japan|JP)"]
-#   url      = "https://www.gstatic.com/generate_204"
-#   interval = 150
-#   strategy = "sticky-sessions"
+  # [[custom_groups]]
+  #   name     = "JP均衡"
+  #   type     = "load-balance"
+  #   rule     = ["(日本|jp|Japan|JP)"]
+  #   url      = "https://www.gstatic.com/generate_204"
+  #   interval = 150
+  #   strategy = "sticky-sessions"
 
 [[custom_groups]]
   name = "AutoJP"
@@ -390,15 +391,15 @@ version = 1
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/myglobal.list"
 
 [[rulesets]]
-  group = "Bing"
+  group   = "Bing"
   type    = "clash-classic"
   ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.yaml"
 [[rulesets]]
-  group = "EpicGames"
+  group   = "EpicGames"
   type    = "clash-classic"
   ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Epic/Epic.yaml"
 [[rulesets]]
-  group = "Xbox"
+  group   = "Xbox"
   type    = "clash-classic"
   ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Xbox/Xbox.yaml"
 [[rulesets]]
