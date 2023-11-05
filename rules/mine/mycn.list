@@ -34,3 +34,6 @@ DOMAIN-SUFFIX,international-gfe.download.nvidia.com
 # Wechat
 DOMAIN-SUFFIX,qlogo.cn
 DOMAIN-SUFFIX,qpic.cn
+
+# cloudflare warp
+PROCESS-NAME,Cloudflare WARP.exe
