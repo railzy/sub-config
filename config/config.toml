@@ -269,7 +269,7 @@ version = 1
   rule     = ["(日本|jp|Japan|JP)"]
   url      = "https://www.gstatic.com/generate_204"
   interval = 150
-  strategy = "sticky-sessions"
+  # strategy = "sticky-sessions"
 
 [[custom_groups]]
   name = "AutoJP"
@@ -292,7 +292,7 @@ version = 1
   rule     = ["(美|USA|America|US)"]
   url      = "https://www.gstatic.com/generate_204"
   interval = 300
-  strategy = "sticky-sessions"
+  # strategy = "sticky-sessions"
 
 [[custom_groups]]
   name = "AutoUSA"
