@@ -10,7 +10,7 @@ geodata-mode: true
 
 #  TCP keep alive interval
 # 控制 Clash 发出 TCP Keep Alive 包的间隔，减少移动设备耗电问题的临时措施。
-keep-alive-interval: 1800
+keep-alive-interval: 3600
 
 # TCP 并发连接所有 IP, 将使用最快握手的 TCP
 # tcp-concurrent: true
