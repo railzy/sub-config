@@ -295,6 +295,20 @@ version = 1
   # strategy = "sticky-sessions"
 
 [[custom_groups]]
+  name     = "HK均衡"
+  type     = "load-balance"
+  rule     = ["(?!.*(5x|10x)).*(港|hk|Hong Kong|HK)"]
+  url      = "https://www.gstatic.com/generate_204"
+  interval = 300
+
+[[custom_groups]]
+  name     = "TW均衡"
+  type     = "load-balance"
+  rule     = ["(台|tw|Taiwan|TW)"]
+  url      = "https://www.gstatic.com/generate_204"
+  interval = 300
+
+[[custom_groups]]
   name = "AutoUSA"
   type = "fallback"
   rule = [
@@ -313,6 +327,7 @@ version = 1
   name = "AutoHK"
   type = "fallback"
   rule = [
+    "[]HK均衡",
     "(?!.*(5x|10x)).*(港|hk|Hong Kong|HK)",
     "(台|tw|Taiwan|TW)",
     "(日|jp|Japan|JP)",
@@ -326,6 +341,7 @@ version = 1
   name = "AutoTW"
   type = "fallback"
   rule = [
+    "[]TW均衡",
     "(台|tw|Taiwan|TW)",
     "(?!.*(5x|10x)).*(港|hk|Hong Kong|HK)",
     "(日|jp|Japan|JP)",
