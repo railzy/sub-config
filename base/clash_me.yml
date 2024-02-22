@@ -61,9 +61,9 @@ dns:
 
   # These nameservers are used to resolve the DNS nameserver hostnames below.
   # Specify IP addresses only
-  default-nameserver:
-    - 223.5.5.5
-    - 223.6.6.6
+  # default-nameserver:
+  #   - 223.5.5.5
+  #   - 223.6.6.6
   #   - 8.8.4.4
 
   # proxy-server-nameserver:
