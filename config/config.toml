@@ -371,6 +371,7 @@ version = 1
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/MyAlwaysDirect.list"
 [[rulesets]]
   group   = "🎯 全球直连"
+  type    = "clash-classic"
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/mycn.list"
 [[rulesets]]
   group   = "AzurLane"
