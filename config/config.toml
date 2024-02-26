@@ -372,7 +372,7 @@ version = 1
 [[rulesets]]
   group   = "🎯 全球直连"
   type    = "clash-classic"
-  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/mycn.list"
+  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/mycn-classical.yaml"
 [[rulesets]]
   group   = "AzurLane"
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/AzurLane.list"
@@ -406,7 +406,8 @@ version = 1
 
 [[rulesets]]
   group   = "🔰 节点选择"
-  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/myglobal.list"
+  type    = "clash-classic"
+  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/myglobal-classical.yaml"
 
 [[rulesets]]
   group   = "Bing"

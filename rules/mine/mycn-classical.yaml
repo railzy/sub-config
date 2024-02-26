@@ -1,0 +1,41 @@
+payload:
+
+# 一座桥在水上's Blog & freshrss
+# DOMAIN-SUFFIX,othing.xyz
+
+# mangadex
+# DOMAIN-SUFFIX,mangadex.org 
+
+# yk漫画
+  - DOMAIN-SUFFIX,ykmh.com
+
+# xbox 下载
+  - DOMAIN-SUFFIX,xboxlive.cn
+  - DOMAIN-SUFFIX,packagespc.xboxlive.com
+
+# xbox 网络检测
+# DOMAIN-SUFFIX,msftconnecttest.com
+
+# 羽翼城的个人博客
+  - DOMAIN-SUFFIX,dogfight360.com
+
+# steam CN 下载
+# 来源 https://www.dogfight360.com/blog/knowledge-base/fix_steamdl_region/
+# DOMAIN-SUFFIX,steamcontent.com
+  - DOMAIN-SUFFIX,cm.steampowered.com
+# DOMAIN-SUFFIX,test.steampowered.com
+  - DOMAIN-SUFFIX,steamserver.net
+
+# GeForce Experience 驱动下载
+  - DOMAIN-SUFFIX,international-gfe.download.nvidia.com
+
+# PC Xbox 游戏服务
+# PROCESS-NAME,gamingservices.exe
+# PROCESS-NAME,gamingservicesnet.exe
+
+# Wechat
+  - DOMAIN-SUFFIX,qlogo.cn
+  - DOMAIN-SUFFIX,qpic.cn
+
+# cloudflare warp
+  - PROCESS-NAME,Cloudflare WARP.exe
