@@ -29,7 +29,7 @@ version = 1
     "[]AutoJP",
     "[]AutoHK",
     "[]AutoUSA",
-    "[]AutoTW",
+    "[]AutoTW","[]JP均衡","[]HK均衡","[]USA均衡",
     "[]DIRECT",
     "(日|jp|Japan|JP)",
     "(港|hk|Hong Kong|HK)",
