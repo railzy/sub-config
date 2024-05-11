@@ -85,12 +85,12 @@ version = 1
 [[custom_groups]]
   name = "⛔️ 广告拦截"
   type = "select"
-  rule = ["[]🛑 全球拦截", "[]🎯 全球直连","[]REJECT", "[]DIRECT", "[]PASS", "[]🔰 节点选择"]
+  rule = ["[]🛑 全球拦截", "[]🎯 全球直连","[]REJECT-DROP","[]REJECT", "[]DIRECT", "[]PASS", "[]🔰 节点选择"]
 
 [[custom_groups]]
   name = "🛑 全球拦截"
   type = "select"
-  rule = ["[]REJECT", "[]DIRECT", "[]PASS", "[]🔰 节点选择"]
+  rule = ["[]REJECT-DROP","[]REJECT", "[]DIRECT", "[]PASS", "[]🔰 节点选择"]
 
 [[custom_groups]]
   name = "🎯 全球直连"
