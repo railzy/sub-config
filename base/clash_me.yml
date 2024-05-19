@@ -118,8 +118,10 @@ dns:
     # - https://dns.alidns.com/dns-query # DNS over HTTPS
     # - "[2400:3200::1]:53"
     # - https://doh.pub/dns-query
-    - https://223.5.5.5/dns-query
-    - https://223.6.6.6/dns-query
+    # - https://223.5.5.5/dns-query
+    # - https://223.6.6.6/dns-query
+    - quic://223.5.5.5
+    - quic://223.6.6.6
     # - dhcp://system # 添加系统 DNS，这种写法只在安卓有效
     # - 114.114.114.114 # default value
     # - https://dns.google/dns-query
