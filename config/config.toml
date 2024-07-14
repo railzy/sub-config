@@ -218,6 +218,8 @@ version = 1
   name = "wg-home"
   type = "fallback"
   rule = ["wg-home","[]DIRECT"]
+  url      = "https://www.gstatic.com/generate_204"
+  interval = 150
 
 [[custom_groups]]
   name = "ff14patch"
