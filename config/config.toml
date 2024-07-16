@@ -29,7 +29,10 @@ version = 1
     "[]AutoJP",
     "[]AutoHK",
     "[]AutoUSA",
-    "[]AutoTW","[]JP均衡","[]HK均衡","[]USA均衡",
+    "[]AutoTW",
+    "[]JP均衡",
+    "[]HK均衡",
+    "[]USA均衡",
     "[]DIRECT",
     "(日|jp|Japan|JP)",
     "(港|hk|Hong Kong|HK)",
@@ -43,6 +46,8 @@ version = 1
   rule = [
     "[]AutoUSA",
     "[]AutoJP",
+    "[]AutoHK",
+    "[]AutoTW",
     "[]🔰 节点选择",
     "(美|USA|America|US)",
     "(日|jp|Japan|JP)",
@@ -85,12 +90,20 @@ version = 1
 [[custom_groups]]
   name = "⛔️ 广告拦截"
   type = "select"
-  rule = ["[]🛑 全球拦截", "[]🎯 全球直连","[]REJECT-DROP","[]REJECT", "[]DIRECT", "[]PASS", "[]🔰 节点选择"]
+  rule = [
+    "[]🛑 全球拦截",
+    "[]🎯 全球直连",
+    "[]REJECT-DROP",
+    "[]REJECT",
+    "[]DIRECT",
+    "[]PASS",
+    "[]🔰 节点选择",
+  ]
 
 [[custom_groups]]
   name = "🛑 全球拦截"
   type = "select"
-  rule = ["[]REJECT-DROP","[]REJECT", "[]DIRECT", "[]PASS", "[]🔰 节点选择"]
+  rule = ["[]REJECT-DROP", "[]REJECT", "[]DIRECT", "[]PASS", "[]🔰 节点选择"]
 
 [[custom_groups]]
   name = "🎯 全球直连"
@@ -215,9 +228,9 @@ version = 1
   rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
 
 [[custom_groups]]
-  name = "wg回家"
-  type = "fallback"
-  rule = ["wg-home","[]DIRECT"]
+  name     = "回家"
+  type     = "fallback"
+  rule     = ["ss-home", "wg-home", "[]DIRECT"]
   url      = "https://www.gstatic.com/generate_204"
   interval = 150
 
@@ -360,10 +373,10 @@ version = 1
 
 # 个人规则，优先级从前往后
 [[rulesets]]
-  group   = "wg回家"
+  group   = "回家"
   type    = "clash-ipcidr"
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/wg-home.yaml"
-  [[rulesets]]
+[[rulesets]]
   group   = "🤖OpenAI"
   type    = "clash-domain"
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/OpenAI.yaml"
