@@ -373,7 +373,7 @@ version = 1
   name     = "Auto回家"
   type     = "fallback"
   rule     = ["[]DIRECT", "ss-home", "wg-home"]
-  url      = "http://rhome.dns.navy/index"
+  url      = "http://192.168.123.1/cgi-bin/luci/" # 测试是否在内网
   interval = 150
 
 # 个人规则，优先级从前往后
