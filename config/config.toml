@@ -228,11 +228,9 @@ version = 1
   rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
 
 [[custom_groups]]
-  name     = "回家"
-  type     = "fallback"
-  rule     = ["ss-home", "wg-home", "[]DIRECT"]
-  url      = "https://www.gstatic.com/generate_204"
-  interval = 150
+  name = "回家"
+  type = "select"
+  rule = ["[]Auto回家", "ss-home", "wg-home", "[]DIRECT"]
 
 [[custom_groups]]
   name = "ff14patch"
@@ -370,6 +368,13 @@ version = 1
   ]
   url = "https://www.gstatic.com/generate_204"
   interval = 300
+
+[[custom_groups]]
+  name     = "Auto回家"
+  type     = "fallback"
+  rule     = ["[]DIRECT", "ss-home", "wg-home"]
+  url      = "https://192.168.123.1"
+  interval = 150
 
 # 个人规则，优先级从前往后
 [[rulesets]]
