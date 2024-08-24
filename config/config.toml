@@ -60,7 +60,15 @@ version = 1
 [[custom_groups]]
   name = "Spotify"
   type = "select"
-  rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
+  rule = [
+    "[]AutoJP",
+    "[]AutoHK",
+    "[]AutoUSA",
+    "[]AutoTW",
+    "[]🔰 节点选择",
+    "[]🎯 全球直连",
+    ".*",
+  ]
 
 [[custom_groups]]
   name = "🎥 NETFLIX"
