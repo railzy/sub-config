@@ -101,7 +101,7 @@ version = 1
   rule = [
     "[]🛑 全球拦截",
     "[]🎯 全球直连",
-    "[]REJECT-DROP",
+    # "[]REJECT-DROP",
     "[]REJECT",
     "[]DIRECT",
     "[]PASS",
@@ -111,7 +111,13 @@ version = 1
 [[custom_groups]]
   name = "🛑 全球拦截"
   type = "select"
-  rule = ["[]REJECT-DROP", "[]REJECT", "[]DIRECT", "[]PASS", "[]🔰 节点选择"]
+  rule = [
+    # "[]REJECT-DROP", 
+    "[]REJECT",
+    "[]DIRECT",
+    "[]PASS",
+    "[]🔰 节点选择",
+  ]
 
 [[custom_groups]]
   name = "🎯 全球直连"
@@ -398,7 +404,7 @@ version = 1
   name     = "Auto回家"
   type     = "fallback"
   rule     = ["[]DIRECT", "ss-home", "wg-home"]
-  url      = "http://192.168.123.1:80" # 测试是否在内网
+  url      = "http://192.168.123.1:80"          # 测试是否在内网
   interval = 150
 
 # 个人规则，优先级从前往后
