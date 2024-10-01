@@ -60,10 +60,10 @@ dns:
   default-nameserver:
     - system
 
-  # proxy-server-nameserver:
-  #   - https://dns.alidns.com/dns-query
+  proxy-server-nameserver:
+    - quic://dns.alidns.com
 
-  enhanced-mode: fake-ip # redir-host or fake-ip
+  enhanced-mode: redir-host # redir-host or fake-ip
   fake-ip-range: 198.18.0.1/16 # Fake IP addresses pool CIDR
   use-hosts: true # lookup hosts and return IP record
 
