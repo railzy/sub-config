@@ -101,10 +101,10 @@ version = 1
   rule = [
     "[]🛑 全球拦截",
     "[]🎯 全球直连",
-    "[]REJECT-DROP",
+    # "[]REJECT-DROP",
     "[]REJECT",
     "[]DIRECT",
-    "[]PASS",
+    # "[]PASS",
     "[]🔰 节点选择",
   ]
 
@@ -112,10 +112,10 @@ version = 1
   name = "🛑 全球拦截"
   type = "select"
   rule = [
-    "[]REJECT-DROP", 
+    # "[]REJECT-DROP", 
     "[]REJECT",
     "[]DIRECT",
-    "[]PASS",
+    # "[]PASS",
     "[]🔰 节点选择",
   ]
 
