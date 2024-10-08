@@ -234,7 +234,7 @@ version = 1
   ]
 
 [[custom_groups]]
-  name = "github"
+  name = "🖥️Github"
   type = "select"
   rule = [
     "[]🔰 节点选择",
@@ -251,14 +251,14 @@ version = 1
   ]
 
 [[custom_groups]]
-  name = "🐟 漏网之鱼"
-  type = "select"
-  rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
-
-[[custom_groups]]
   name = "🏠回家"
   type = "select"
   rule = ["[]Auto回家", "ss-home", "wg-home", "[]DIRECT"]
+
+[[custom_groups]]
+  name = "📢谷歌推送"
+  type = "select"
+  rule = ["[]DIRECT", "[]🔰 节点选择", "[]🎯 全球直连", ".*"]
 
 [[custom_groups]]
   name = "ff14patch"
@@ -286,6 +286,11 @@ version = 1
     "(?!.*10x).*(港|hk|Hong Kong|HK)",
     ".*",
   ]
+
+[[custom_groups]]
+  name = "🐟 漏网之鱼"
+  type = "select"
+  rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
 
   # 没啥用
   # [[custom_groups]]
@@ -451,7 +456,7 @@ version = 1
   type    = "clash-classic"
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/mytw.yaml"
 [[rulesets]]
-  group   = "🎯 全球直连"
+  group   = "📢谷歌推送"
   type    = "clash-domain"
   ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/googlefcm.yaml"
 
@@ -496,18 +501,15 @@ version = 1
   type    = "clash-domain"
   ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/spotify.yaml"
 
-
 [[rulesets]]
-  group   = "github"
+  group   = "🖥️Github"
   type    = "clash-domain"
   ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo-lite/geosite/github.yaml"
-
 
 [[rulesets]]
   group   = "💕EH"
   type    = "clash-domain"
   ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo-lite/geosite/ehentai.yaml"
-
 
 [[rulesets]]
   group   = "🛑 全球拦截"
