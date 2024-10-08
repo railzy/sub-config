@@ -193,7 +193,7 @@ version = 1
   ]
 
 [[custom_groups]]
-  name = "eh"
+  name = "💕EH"
   type = "select"
   rule = [
     "[]AutoUSA",
@@ -450,6 +450,10 @@ version = 1
   group   = "tw"
   type    = "clash-classic"
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/mytw.yaml"
+[[rulesets]]
+  group   = "🎯 全球直连"
+  type    = "clash-domain"
+  ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/googlefcm.yaml"
 
 # 广告规则要放前面否则没用
 #[[rulesets]]
@@ -500,7 +504,7 @@ version = 1
 
 
 [[rulesets]]
-  group   = "eh"
+  group   = "💕EH"
   type    = "clash-domain"
   ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo-lite/geosite/ehentai.yaml"
 
