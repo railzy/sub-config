@@ -423,7 +423,7 @@ version = 1
 # 个人规则，优先级从前往后
 [[rulesets]]
   group   = "🏠回家"
-  type    = "clash-ipcidr"
+  type    = "clash-classic"
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/home.yaml"
 [[rulesets]]
   group   = "🤖OpenAI"
