@@ -63,23 +63,23 @@ version = 1
   rule = [
     "[]AutoJP",
     "[]JP均衡",
+    "[]DIRECT",
     "[]AutoHK",
     "[]AutoUSA",
     "[]AutoTW",
     "[]HK均衡",
     "[]USA均衡",
     "[]🔰 节点选择",
-    "[]DIRECT",
     ".*",
   ]
 
 [[custom_groups]]
-  name = "🎥 NETFLIX"
+  name = "🏠回家"
   type = "select"
-  rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
+  rule = ["[]Auto回家", "ss-home", "wg-home", "[]DIRECT"]
 
 [[custom_groups]]
-  name = "ff14"
+  name = "🎮FF14Global"
   type = "select"
   rule = [
     "[]AutoJP",
@@ -96,7 +96,18 @@ version = 1
 [[custom_groups]]
   name = "🌍 国外媒体"
   type = "select"
-  rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
+  rule = [
+    "[]🔰 节点选择",
+    "[]AutoJP",
+    "[]AutoHK",
+    "[]AutoUSA",
+    "[]AutoTW",
+    "[]JP均衡",
+    "[]HK均衡",
+    "[]USA均衡",
+    "[]🎯 全球直连",
+    ".*",
+  ]
 
 [[custom_groups]]
   name = "⛔️ 广告拦截"
@@ -251,11 +262,6 @@ version = 1
   ]
 
 [[custom_groups]]
-  name = "🏠回家"
-  type = "select"
-  rule = ["[]Auto回家", "ss-home", "wg-home", "[]DIRECT"]
-
-[[custom_groups]]
   name = "📢谷歌推送"
   type = "select"
   rule = ["[]DIRECT", "[]🔰 节点选择", "[]🎯 全球直连", ".*"]
@@ -266,7 +272,7 @@ version = 1
   rule = ["[]DIRECT", "[]🔰 节点选择", ".*"]
 
 [[custom_groups]]
-  name = "AzurLane"
+  name = "🎮AzurLane"
   type = "select"
   rule = ["[]DIRECT", "[]🔰 节点选择", ".*"]
 
@@ -286,6 +292,11 @@ version = 1
     "(?!.*10x).*(港|hk|Hong Kong|HK)",
     ".*",
   ]
+
+[[custom_groups]]
+  name = "🎥 NETFLIX"
+  type = "select"
+  rule = ["[]🔰 节点选择", "[]🎯 全球直连", ".*"]
 
 [[custom_groups]]
   name = "🐟 漏网之鱼"
@@ -427,7 +438,7 @@ version = 1
   type    = "clash-domain"
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/ff14patch.yaml"
 [[rulesets]]
-  group   = "ff14"
+  group   = "🎮FF14Global"
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/ff14.list"
 [[rulesets]]
   group   = "ACT"
@@ -440,7 +451,7 @@ version = 1
   type    = "clash-classic"
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/mycn-classical.yaml"
 [[rulesets]]
-  group   = "AzurLane"
+  group   = "🎮AzurLane"
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/AzurLane.list"
 [[rulesets]]
   group   = "⛔️ 广告拦截"
