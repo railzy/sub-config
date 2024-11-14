@@ -8,8 +8,8 @@
 DOMAIN-SUFFIX,ykmh.com
 
 # xbox 下载
-DOMAIN-SUFFIX,xboxlive.cn
-DOMAIN-SUFFIX,packagespc.xboxlive.com
+# DOMAIN-SUFFIX,xboxlive.cn
+# DOMAIN-SUFFIX,packagespc.xboxlive.com
 
 # xbox 网络检测
 # DOMAIN-SUFFIX,msftconnecttest.com
