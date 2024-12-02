@@ -433,7 +433,7 @@ version = 1
 [[rulesets]]
   group   = "🪟WindowsProcess"
   type    = "clash-classic"
-  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/home.yaml"
+  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/WindowsProcess-classical.yaml"
 [[rulesets]]
   group   = "🤖OpenAI"
   type    = "clash-domain"
