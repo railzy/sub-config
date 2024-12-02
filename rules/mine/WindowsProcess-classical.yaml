@@ -1,0 +1,5 @@
+payload:
+  - PROCESS-NAME,svchost.exe
+  - PROCESS-NAME,explorer.exe
+  - PROCESS-NAME,FileCoAuth.exe
+  - PROCESS-NAME,backgroundTaskHost.exe
