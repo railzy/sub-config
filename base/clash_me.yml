@@ -113,11 +113,11 @@ dns:
 
   #指定域名使用自定义DNS解析
   nameserver-policy:
-    "geosite:microsoft":
-      - 4.2.2.2
-      # - 4.2.2.1
-      - tls://1.0.0.1
-      - tls://8.8.4.4
-      - https://1.0.0.1/dns-query
+    # "geosite:microsoft":
+    #   - 4.2.2.2
+    #   # - 4.2.2.1
+    #   - tls://1.0.0.1
+    #   - tls://8.8.4.4
+    #   - https://1.0.0.1/dns-query
     "geosite:cn":
       - system
