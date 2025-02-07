@@ -212,7 +212,7 @@ version = 1
     "[]AutoJP",
     "[]AutoHK",
     "[]AutoTW",
-    "[]DIRECT",
+    "[]DIRECT","[]PASS",
     "(美|USA|America|US)",
     "(日|jp|Japan|JP)",
     "(港|hk|Hong Kong|HK)",
