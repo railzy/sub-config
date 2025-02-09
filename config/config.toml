@@ -204,7 +204,7 @@ version = 1
   ]
 
 [[custom_groups]]
-  name = "💕H_H"
+  name = "💕H@H"
   type = "select"
   rule = [
     "[]💕EH",
@@ -547,9 +547,9 @@ version = 1
   ruleset = "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo-lite/geosite/github.yaml"
 
 [[rulesets]]
-  group   = "💕H_H"
+  group   = "💕H@H"
   type    = "clash-domain"
-  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/hentaihome_domain.yaml"
+  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/hentaiathome_domain.yaml"
 
 [[rulesets]]
   group   = "💕EH"
