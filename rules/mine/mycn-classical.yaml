@@ -39,3 +39,4 @@ payload:
 
 # cloudflare warp
   - PROCESS-NAME,Cloudflare WARP.exe
+  - PROCESS-NAME,warp-svc.exe

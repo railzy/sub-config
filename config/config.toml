@@ -468,10 +468,12 @@ version = 1
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/ff14patch.yaml"
 [[rulesets]]
   group   = "🎮FF14Global"
-  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/ff14.list"
+  type    = "clash-classic"
+  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/ff14.yaml"
 [[rulesets]]
   group   = "ACT"
-  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/AdvancedCombatTracker.list"
+  type    = "clash-domain"
+  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/AdvancedCombatTracker.yaml"
 [[rulesets]]
   group   = "DIRECT"
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/MyAlwaysDirect.list"
