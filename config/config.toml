@@ -483,7 +483,8 @@ version = 1
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/mycn-classical.yaml"
 [[rulesets]]
   group   = "🎮AzurLane"
-  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/AzurLane.list"
+  type    = "clash-domain"
+  ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/AzurLane.yaml"
 [[rulesets]]
   group   = "⛔️ 广告拦截"
   ruleset = "https://raw.githubusercontent.com/railzy/sub-config/main/rules/mine/MyADList.list"
