@@ -77,7 +77,7 @@ version = 1
 [[custom_groups]]
   name = "🏠回家"
   type = "select"
-  rule = ["[]DIRECT", "[]Auto回家", "ss-home", "wg-home"]
+  rule = ["[]DIRECT", "[]Auto回家", "ss-home", "wg-home","stunHome"]
 
 [[custom_groups]]
   name = "🎮FF14Global"
