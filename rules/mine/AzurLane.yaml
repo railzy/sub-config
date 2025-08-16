@@ -1,2 +1,3 @@
 # AzurLaneJP 数据包
-DOMAIN-SUFFIX,blhxstatic.yo-star.com
+payload:
+  - +.blhxstatic.yo-star.com
