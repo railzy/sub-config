@@ -26,10 +26,6 @@ payload:
 # DOMAIN-SUFFIX,test.steampowered.com
   - DOMAIN-SUFFIX,steamserver.net
 
-# epic launcher
-  - PROCESS-NAME,EpicGamesLauncher.exe
-  - PROCESS-NAME,EpicWebHelper.exe
-
 # GeForce Experience 驱动下载
   - DOMAIN-SUFFIX,international-gfe.download.nvidia.com
 

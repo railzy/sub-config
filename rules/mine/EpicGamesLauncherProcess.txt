@@ -1,0 +1,2 @@
+PROCESS-NAME,EpicGamesLauncher.exe
+PROCESS-NAME,EpicWebHelper.exe
