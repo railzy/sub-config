@@ -1,0 +1,6 @@
+# steam CN 下载
+# 来源 https://www.dogfight360.com/blog/knowledge-base/fix_steamdl_region/
+# DOMAIN-SUFFIX,steamcontent.com
++.cm.steampowered.com
+# DOMAIN-SUFFIX,test.steampowered.com
++.steamserver.net
