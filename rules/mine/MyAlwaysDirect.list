@@ -21,6 +21,9 @@ DOMAIN-SUFFIX,mcd.portal.cloudwinner.cn
 # CatNet 订阅
 DOMAIN,configuration.osk2.com
 
+# easytier
+PROCESS-NAME,easytier-gui.exe
+
 # uu加速器
 PROCESS-NAME,uu.exe
 PROCESS-NAME,uu_render.exe
